@@ -54,3 +54,7 @@ directly related with the semantic value.
 
 Released under the [WTFPL](http://sam.zoy.org/wtfpl/) license.
 
+
+## Examples
+
+ - [All rules](http://millermedeiros.github.com/basis.css/tests/all.html)
