@@ -1,0 +1,52 @@
+
+/* ===== RAPID PROTOTYPING ===== */
+
+/*
+ *
+ * Non-semantic classes used for fast prototyping.
+ *
+ * These classes **should be used with care** since they can reduce the flexibility and may lead to unsemantical markup.
+ *
+ * They can reduce the delopment time a lot depending on the scenario helping you to DRY.
+ *
+ */
+
+/* -- floats -- */
+
+/* using !important on these rules to ensure user won't override it - .fl should **NEVER** mean .fr !!! */
+.fl{float:left !important; _margin-right:-3px}
+.fr{float:right !important; _margin-left:-3px}
+.ffluid{display:table-cell !important; *display:block; width:auto !important}
+.cr{clear:right}
+.cl{clear:left}
+.cb{clear:both}
+
+
+/* -- centering -- */
+
+/* vertical centering technique [http://www.jakpsatweb.cz/css/css-vertical-center-solution.html] */
+.vcenter{/* height of .vcenter element is required */ overflow:hidden; *position:relative; display:table; *display:block}
+.vcenter .outer{display:table-cell; vertical-align:middle; width:100%; *position:absolute; *top:50%}
+.vcenter .inner{*position:relative; *top:-50%}
+
+.hcenter{/* width is required */ margin-left:auto !important; margin-right:auto !important}
+
+
+/* -- text helpers -- */
+
+.tcenter{text-align:center}
+.tleft{text-align:left}
+.tright{text-align:right}
+.tupper{text-transform:uppercase}
+.tlower{text-transform:lowercase}
+.tnormal{text-transform:none}
+
+.vatop{vertical-align:top}
+.vamiddle{vertical-align:middle}
+.vabottom{vertical-align:bottom}
+
+
+/* -- interaction helpers -- */
+
+.clickable, .btn{cursor:pointer}
+.clickable.disabled, .btn.disabled{cursor:default !important}

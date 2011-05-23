@@ -1,0 +1,52 @@
+
+/* ===== PROJECT SPECIFIC ===== */
+
+/*
+ *
+ *	It is impossible to create base styles that works for all kinds of projects, that's why these 
+ *	styles should be edited in almost all projects. Use them as an implementation reference.
+ *
+ */
+
+
+/* --- font-styles --- */
+
+.h1, .h2, .h3, .h4, .h5, .h6{font-weight:bold; line-height:1em}
+.h1{font-size:2em; margin:.766em 0 .388em}
+.h2{font-size:1.6em; margin:.833em 0 .5em}
+.h3{font-size:1.4em; margin:1em 0 .666em}
+.h4{font-size:1.2em; margin:1.133em 0 .766em}
+.h5{font-size:1.1em; margin:1.2em 0 .833em}
+.h6{font-size:1em; margin:1.5em 0 1em}
+
+.b{font-weight:bold}
+.em{font-style:italic}
+.big{font-size:1.166em}
+.small{font-size:.833em}
+.del{text-decoration:line-through}
+
+
+/* --- lists --- */
+
+.nav, .nav > li{padding:0; margin:0; list-style:none} /* not really required, just to safeguard against ul,ol global definitions */
+.navleft{text-align:left}
+.navleft > li, .navright > li, .navcenter > li{display:inline}
+.navleft > li > a, .navright > li > a, .navcenter > li > a{padding:0 .5em}
+.navright{text-align:right}
+.navcenter{text-align:center}
+.navcenter > li > a{display:inline-block}
+
+.simplelist{margin:1em 0}
+.simplelist, .simplelist ol, .simplelist ul{padding-left:2em}
+ol.simplelist, .simplelist ol{list-style:decimal}
+ul.simplelist, .simplelist ul{list-style:disc}
+.simplelist li{margin:.5em 0}
+.simplelist ul, .simplelist ol{margin:0 0 1em}
+.simplelist dt{margin:1em 0 .2em}
+.simplelist dd{margin:.5em 0; padding-left:2em}
+
+
+/* --- other --- */
+
+.hr-1{background-color:#fff; border:1px solid #fff; border-top:1px solid #aaa; clear:both; margin:2em 0}
+

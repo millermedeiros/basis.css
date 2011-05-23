@@ -1,0 +1,18 @@
+
+/* grid => update values to match project grid */
+.gridholder{margin-right:-18px; width:984px} /* width should be the same as full grid + gutter. it should be used together with .clearfix */
+.gridholder > .grid{float:left; margin-right:18px}
+/* using !important on all values to be able to use it for sizing elements besides grid columns */
+.grid-1{width:64px !important}
+.grid-2{width:146px !important}
+.grid-3{width:228px !important}
+.grid-4{width:310px !important}
+.grid-5{width:392px !important}
+.grid-6{width:474px !important}
+.grid-7{width:556px !important}
+.grid-8{width:638px !important}
+.grid-9{width:720px !important}
+.grid-10{width:802px !important}
+.grid-11{width:884px !important}
+.grid-12{width:966px !important}
+
