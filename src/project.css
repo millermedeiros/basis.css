@@ -11,13 +11,13 @@
 
 /* --- font-styles --- */
 
-.h1, .h2, .h3, .h4, .h5, .h6{font-weight:bold; line-height:1em}
-.h1{font-size:2em; margin:.766em 0 .388em}
-.h2{font-size:1.6em; margin:.833em 0 .5em}
-.h3{font-size:1.4em; margin:1em 0 .666em}
-.h4{font-size:1.2em; margin:1.133em 0 .766em}
-.h5{font-size:1.1em; margin:1.2em 0 .833em}
-.h6{font-size:1em; margin:1.5em 0 1em}
+.h-1, .h-2, .h-3, .h-4, .h-5, .h-6{font-weight:bold; line-height:1em}
+.h-1{font-size:2em; margin:.766em 0 .388em}
+.h-2{font-size:1.6em; margin:.833em 0 .5em}
+.h-3{font-size:1.4em; margin:1em 0 .666em}
+.h-4{font-size:1.2em; margin:1.133em 0 .766em}
+.h-5{font-size:1.1em; margin:1.2em 0 .833em}
+.h-6{font-size:1em; margin:1.5em 0 1em}
 
 .b{font-weight:bold}
 .em{font-style:italic}

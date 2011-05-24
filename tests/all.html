@@ -29,7 +29,7 @@
 	<body>
 		<div id="wrapper" class="clearfix">
 			
-			<h1 class="h1">Sample of <a href="https://github.com/millermedeiros/basis.css">basis.css</a></h1>
+			<h1 class="h-1">Sample of <a href="https://github.com/millermedeiros/basis.css">basis.css</a></h1>
       <div class="example-note example-note-2">
         <p>
           This is a sample of all styles present on basis.css.
@@ -38,7 +38,7 @@
       </div>
 			<hr class="hr-1" />
 			
-			<h2 class="h2">Text Styles</h2>
+			<h2 class="h-2">Text Styles</h2>
 			<div class="example-note">
 				<p>
 					Don't abuse of these styles, they were created to help fast prototyping and should be avoided since they will reduce your flexibility and may lead to unsemantical markup, use with care. <small> - It is important to note that I use them very often since they reduce a lot the need of extra classes... it all depends on the kind of project you are developing.</small>
@@ -80,12 +80,15 @@
 			
 			<hr class="hr-1" />
 			
-			<h2 class="h2">Headings</h2>
+			<h2 class="h-2">Headings</h2>
 			<div class="example-note">
 				<p>
-					Classes <code>.h1-.h6</code> should be used only on header elements. It can help you keep proper semantic while changing visual style.
+					Classes <code>.h-1, .h-2, .h-3, ...</code> should be used only on header elements. It can help you keep proper semantic while changing visual style.
           Avoid adding style rules to the <code>h1-h6</code> elements to reduce specificity problems and too much overwriting.
 				</p>
+        <p>
+          You should tweak the values to match the project need and create extra classes if needed (or remove unused ones).
+        </p>
 			</div>
 			<h1>[h1] Lorem Ipsum dolor</h1>
 			<h2>[h2] Lorem Ipsum dolor</h2>
@@ -93,17 +96,17 @@
 			<h4>[h4] Lorem Ipsum dolor</h4>
       <h5>[h5] Lorem Ipsum dolor</h5>
 			<h6>[h6] Lorem Ipsum dolor</h6>
-			<h1 class="h6">[h1.h6] Lorem Ipsum dolor</h1>
-			<h2 class="h5">[h2.h5] Lorem Ipsum dolor</h2>
-			<h3 class="h4">[h3.h4] Lorem Ipsum dolor</h3>
-			<h4 class="h3">[h4.h3] Lorem Ipsum dolor</h4>
-			<h5 class="h2">[h5.h2] Lorem Ipsum dolor</h5>
-			<h6 class="h1">[h6.h1] Lorem Ipsum dolor</h6>
+			<h1 class="h-6">[h1.h-6] Lorem Ipsum dolor</h1>
+			<h2 class="h-5">[h2.h-5] Lorem Ipsum dolor</h2>
+			<h3 class="h-4">[h3.h-4] Lorem Ipsum dolor</h3>
+			<h4 class="h-3">[h4.h-3] Lorem Ipsum dolor</h4>
+			<h5 class="h-2">[h5.h-2] Lorem Ipsum dolor</h5>
+			<h6 class="h-1">[h6.h-1] Lorem Ipsum dolor</h6>
 			
 			<hr class="hr-1" />
 
-			<h2 class="h2">Lists</h2>
-			<h3 class="h3">Unordered list (ul.simplelist > li)</h3>
+			<h2 class="h-2">Lists</h2>
+			<h3 class="h-3">Unordered list (ul.simplelist > li)</h3>
 			<ul class="simplelist">
 				<li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
 				<li>Phasellus et neque at eros lobortis auctor a nec metus.</li>
@@ -129,7 +132,7 @@
 				</li>
 			</ul>
 			
-			<h3 class="h3">Ordered Lists (ol.simplelist > li)</h3>
+			<h3 class="h-3">Ordered Lists (ol.simplelist > li)</h3>
 			<ol class="simplelist">
 				<li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
 				<li>Phasellus et neque at eros lobortis auctor a nec metus.</li>
@@ -155,7 +158,7 @@
 				</li>
 			</ol>
 			
-			<h3 class="h3">Definition Lists (dl.simplelist > dt + dd*)</h3>
+			<h3 class="h-3">Definition Lists (dl.simplelist > dt + dd*)</h3>
 			<dl class="simplelist">
 				<dt>Lorem ipsum</dt>
 					<dd>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</dd>
@@ -166,7 +169,7 @@
 					<dd>Phasellus id nibh semper risus convallis elementum.</dd>
 			</dl>
 			
-			<h3 class="h3">Nav (ul.nav > li > a)</h3>
+			<h3 class="h-3">Nav (ul.nav > li > a)</h3>
 			<ul class="nav">
 				<li><a href="#">Nulla porta</a></li>
 				<li><a href="#">Pellentesque id risus</a></li>
@@ -174,7 +177,7 @@
 				<li><a href="#">Phasellus</a></li>
 			</ul>
 			
-			<h3 class="h3">Nav (ul.nav.navleft > li > a)</h3>
+			<h3 class="h-3">Nav (ul.nav.navleft > li > a)</h3>
 			<ul class="nav navleft">
 				<li><a href="#">Nulla porta</a></li>
 				<li><a href="#">Pellentesque id risus</a></li>
@@ -182,7 +185,7 @@
 				<li><a href="#">Phasellus</a></li>
 			</ul>
 			
-			<h3 class="h3">Nav (ul.nav.navright > li > a)</h3>
+			<h3 class="h-3">Nav (ul.nav.navright > li > a)</h3>
 			<ul class="nav navright">
 				<li><a href="#">Nulla porta</a></li>
 				<li><a href="#">Pellentesque id risus</a></li>
@@ -190,7 +193,7 @@
 				<li><a href="#">Phasellus</a></li>
 			</ul>
 			
-			<h3 class="h3">Nav (ul.nav.navcenter > li > a)</h3>
+			<h3 class="h-3">Nav (ul.nav.navcenter > li > a)</h3>
 			<ul class="nav navcenter">
 				<li><a href="#">Nulla porta</a></li>
 				<li><a href="#">Pellentesque id risus</a></li>
@@ -200,7 +203,7 @@
 			
 			<hr class="hr-1" />
 			
-			<h2 class="h2">Columns (.clearfix > .col.col-[n]*)</h2>
+			<h2 class="h-2">Columns (.clearfix > .col.col-[n]*)</h2>
 			<div class="clearfix tcenter">
 				<div class="col col-1_2">.col.col-1_2</div>
 				<div class="col col-1_2">.col.col-1_2</div>
@@ -216,7 +219,7 @@
 				<div class="col col-3_6">.col.col-3_6</div>
 			</div>
 			
-			<h3 class="h3">&quot;Flexible&quot; last column (.clearfix.fcolholder > .col.col-[n]* + .col.lastcol)</h3>
+			<h3 class="h-3">&quot;Flexible&quot; last column (.clearfix.fcolholder > .col.col-[n]* + .col.lastcol)</h3>
 			<div class="clearfix fcolholder tcenter">
 				<div class="col col-1_2">.col.col-1_2</div>
 				<div class="col lastcol">.col.lastcol</div>
@@ -228,7 +231,7 @@
 				<div class="col lastcol">.col.lastcol</div>
 			</div>
 			
-			<h2 class="h2">Nested Columns (.clearfix > .col.col-[n]* > .clearfix > .col.col-[n]*)</h2>
+			<h2 class="h-2">Nested Columns (.clearfix > .col.col-[n]* > .clearfix > .col.col-[n]*)</h2>
 			<div class="clearfix tcenter">
 				<div class="col col-1_2">.col.col-1_2
 					<div class="clearfix">
@@ -268,7 +271,7 @@
 
 			<hr class="hr-1" />
 			
-			<h2 class="h2">Floated Elements</h2>
+			<h2 class="h-2">Floated Elements</h2>
 			
 			<div class="example-note">
 				<p>
@@ -276,20 +279,20 @@
 				</p>
 			</div>
 
-			<h3 class="h3">.clearfix &gt; .fl + .fr</h3>
+			<h3 class="h-3">.clearfix &gt; .fl + .fr</h3>
 			<div class="clearfix example-outline">
 				<div class="fl">.fl</div>
 				<div class="fr">.fr</div>
 			</div>
 			
-			<h3 class="h3">.fl + .fr + br.cb</h3>
+			<h3 class="h-3">.fl + .fr + br.cb</h3>
 			<div class="example-outline">
 				<div class="fl">.fl</div>
 				<div class="fr">.fr</div>
 				<br class="cb" />
 			</div>
 			
-			<h3 class="h3">.clearfix &gt; .fl + .fr + .ffluid</h3>
+			<h3 class="h-3">.clearfix &gt; .fl + .fr + .ffluid</h3>
 			<div class="clearfix example-outline">
 				<div class="fl">.fl</div>
 				<div class="fr">.fr</div>
@@ -298,20 +301,20 @@
 			
 			<hr class="hr-1" />
 			
-			<h2 class="h2">Mouse cursor</h2>
+			<h2 class="h-2">Mouse cursor</h2>
 			<div class="clickable">.clickable</div>
 			<div class="clickable disabled">.clickable.disabled</div>
 			<hr class="hr-1" />
 			
-			<h2 class="h2">Image Replacement (.ir)</h2>
+			<h2 class="h-2">Image Replacement (.ir)</h2>
 			<span class="ir" style="background-image:url(http://30.media.tumblr.com/tumblr_lgd1neNYSL1qbwkzvo1_500.jpg); width:500px; height:333px">this is going to be replaced by an awesome picture</span>
 			<p style="color:#BADA55">#BADA55!</p>
 			
 			<hr class="hr-1" />
 			
-			<h2 class="h2">Block-level Centering</h2>
+			<h2 class="h-2">Block-level Centering</h2>
 			
-			<h3 class="h3">.hcenter</h3>
+			<h3 class="h-3">.hcenter</h3>
 			<div class="example-outline">
 				<div class="hcenter" style="width:300px">
 					div > .hcenter
@@ -321,7 +324,7 @@
 				*Width of centered element is required.
 			</p>
 			
-			<h3 class="h3">.vcenter</h3>
+			<h3 class="h-3">.vcenter</h3>
 			<div class="vcenter example-outline" style="height:100px">
 				<div class="outer">
 					<div class="inner">
@@ -335,7 +338,7 @@
 			
 			<hr class="hr-1" />
 			
-			<h2 class="h2">Grid</h2>
+			<h2 class="h-2">Grid</h2>
 			<div class="example-note">
 				<p>
 					Grid is basically a column system with a gutter between columns.
@@ -345,14 +348,14 @@
 				</p>
 			</div>
 
-			<h3 class="h3">Static Grid</h3>
+			<h3 class="h-3">Static Grid</h3>
 			<div class="example-note">
 				<p>
 					The class <code>.gridholder</code> when used together with <code>.clearfix</code> removes the need of adding classes like: <code>.row, .alpha, .omega, .last, .first, etc</code>. Rows are created automatically based on the gridholder and grid columns width.
 				</p>
 			</div>
 
-			<h4 class="h4">All Sizes</h4>
+			<h4 class="h-4">All Sizes</h4>
 			<div class="clearfix tcenter gridholder">
 				<div class="cb b" style="margin-bottom:10px">.clearfix.gridholder</div>
 				<div class="grid grid-6">.grid.grid-6</div>
@@ -370,7 +373,7 @@
 				<div class="grid grid-12">.grid.grid-12</div>
 			</div>
 
-			<h4 class="h4">Mixed</h4>
+			<h4 class="h-4">Mixed</h4>
 			<div class="clearfix tcenter gridholder">
 				<div class="cb b" style="margin-bottom:10px">.clearfix.gridholder</div>
 				<div class="grid grid-6">.grid.grid-6</div>
@@ -394,7 +397,7 @@
 				<div class="grid grid-1">.grid.grid-1</div>
 			</div>
 
-			<h4 class="h4">Nested</h4>
+			<h4 class="h-4">Nested</h4>
 			<div class="clearfix tcenter gridholder">
 				<div class="cb b" style="margin-bottom:10px">.clearfix.gridholder</div>
 				<div class="grid grid-12">.grid.grid-12
@@ -446,7 +449,7 @@
 				</div>
 			</div>
 
-			<h3 class="h3">Using as size unit</h3>
+			<h3 class="h-3">Using as size unit</h3>
 			<div class="example-note">
 				<p>
 					The classes .grid-[n] can be used as a sizing unit for non-column items. Those classes doesn't contain any default margin/gutter.
@@ -465,7 +468,7 @@
 			<div class="grid-11">.grid-11</div>
 			<div class="grid-12">.grid-12</div>
 
-			<h3 class="h3">Fluid Grid</h3>
+			<h3 class="h-3">Fluid Grid</h3>
 			<div class="example-note">
 				<p>
 					The class <code>.fgridholder</code> when used together with <code>.clearfix</code> removes the need of adding classes like: <code>.row, .alpha, .omega, .last, .first, etc</code>. Rows are created automatically based on the gridholder and grid columns width.
@@ -475,7 +478,7 @@
 				</p>
 			</div>
 
-			<h4 class="h4">All Sizes</h4>
+			<h4 class="h-4">All Sizes</h4>
 			<div class="clearfix tcenter fgridholder">
 				<div class="cb b" style="margin-bottom:10px">.clearfix.fgridholder</div>
 				<div class="grid fgrid-6">.grid.fgrid-6</div>
@@ -493,7 +496,7 @@
 				<div class="grid fgrid-12">.grid.fgrid-12</div>
 			</div>
 
-			<h4 class="h4">Mixed</h4>
+			<h4 class="h-4">Mixed</h4>
 			<div class="clearfix tcenter fgridholder">
 				<div class="cb b" style="margin-bottom:10px">.clearfix.fgridholder</div>
 				<div class="grid fgrid-6">.grid.fgrid-6</div>
@@ -519,7 +522,7 @@
 
 			<hr class="hr-1" />
 
-      <h2 class="h2">Other</h2>
+      <h2 class="h-2">Other</h2>
       <div class="bquote-1">
         [.bquote-1] lorem ipsum solor sit amet maecennas ullamcor dolor sit amet.
       </div>
