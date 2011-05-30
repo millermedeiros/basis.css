@@ -1,22 +1,22 @@
 # basis.css - a CSS framework for rapid development #
 
+https://github.com/millermedeiros/basis.css/
+
 
 ## Intro
 
 This is a collection of patterns that repeat across different projects and base 
 styles that I have to set across most projects.
 
-
-## Philosophy
-
-This framework is meant to be used for fast development. It is heavily inspired by
-the OOCSS approach of adding multiple classes to each element even if those classes
-aren't semantic. A lot of people may not agree with this approach but it can reduce
-a lot development time and also reduce file size and CSS complexity. 
+This framework is target for fast development. It is heavily inspired by
+the [OOCSS approach](http://www.slideshare.net/stubbornella/the-cascade-grids-headings-and-selectors-from-an-oocss-perspective-ajax-experience-2009) of adding multiple classes to each element 
+even if those classes aren't semantic and using elements as building blocks. 
+A lot of people may not agree with this approach but it can reduce development time, 
+file size and complexity a lot, read [this presentation](http://www.slideshare.net/stubbornella/our-best-practices-are-killing-us) to understand why.
 
 The classes and features are exclusively structural, so you won't see any sort of 
 rules for components like buttons or dialogs with a default visual style since for 
-the kind of projects I work it is very uncommon to share visual styles across multiple 
+the kind of work I do it is very uncommon to share visual styles across multiple 
 projects. The only elements which have a preset visual style are headings, paragraphs 
 and a few other basic elements/classes used as an implementation reference and that 
 should be edited by the user.
@@ -37,8 +37,8 @@ source code.
 
 ## Browser Support
 
-This project targets modern browsers (IE 7+, FF 3+, Chrome 4+, Safari 4+, Opera 10+). 
-Please note that not all features been tested on all these browsers.
+This project targets *modern* browsers (IE 7+, FF 3+, Chrome 4+, Safari 4+, Opera 10+). 
+Please note that not all features been tested on all these browsers yet.
 
 
 ## Important
