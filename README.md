@@ -17,9 +17,14 @@ file size and complexity a lot, read [this presentation](http://www.slideshare.n
 The classes and features are exclusively structural, so you won't see any sort of 
 rules for components like buttons or dialogs with a default visual style since for 
 the kind of work I do it is very uncommon to share visual styles across multiple 
-projects. The only elements which have a preset visual style are headings, paragraphs 
+projects. The only elements which have a preset visual style are paragraphs 
 and a few other basic elements/classes used as an implementation reference and that 
 should be edited by the user.
+
+Depending on the kind of project it may be a good idea to set default values to all the 
+elements and just use classes to "enhance them", in other projects the visual style is
+so apart from the semantic value and/or you need so many variations that it doesn't make 
+any sense to have defaults. Choose the best approach based on the project.
 
 **These files should provide a base start point but many of the properties should be
 tweaked to match your needs, it isn't a one-size-fits-all solution.**
@@ -29,10 +34,14 @@ tweaked to match your needs, it isn't a one-size-fits-all solution.**
 
 This project shares a few features, techniques and "philosophy" present on 
 [HTML5 Boilerplate](http://html5boilerplate.com/), [OOCSS](http://oocss.org/), 
-[Blueprint CSS](http://www.blueprintcss.org/) and many other CSS frameworks... some of 
-them are pure coincidence, others are heavily inspired or even copied... - techniques
-borrowed from other people (and that aren't common knowledge) are credited on the
-source code.
+[Blueprint CSS](http://www.blueprintcss.org/), [normalize.css](https://github.com/necolas/normalize.css)
+and many other CSS frameworks... some of them are pure coincidence, others are heavily 
+inspired or even copied... - techniques borrowed from other people (and that aren't 
+common knowledge) are credited on the source code.
+
+You can use some of the [stubbornella/OOCSS](https://github.com/stubbornella/oocss/) 
+files (mod.css, space.css, media.css, table.css) as a complement to basis.css 
+features, those rules where left behind on purpose since they are already available.
 
 
 ## Browser Support
