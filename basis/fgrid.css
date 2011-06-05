@@ -1,5 +1,9 @@
+/*
+ * FLUID GRID
+ * ----------
+ * Update values to match your project grid!
+ */
 
-/* fluid grid => update values to match project grid */
 /* it is important to note that .fgrid-[n] units doesn't match proper size when used outside of .fgridholder */
 .fgridholder{margin-right:-2.5%} /* .fgridholder should be used together with .clearfix, set negative margin as opposite value of gutter */
 .fgridholder > .grid{float:left; margin-right:2.5%}

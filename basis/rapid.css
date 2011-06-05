@@ -1,15 +1,11 @@
-
-/* ===== RAPID PROTOTYPING ===== */
-
 /*
- *
- * Non-semantic classes used for fast prototyping.
- *
+ * RAPID DEVELOPMENT
+ * -----------------
+ * Non-semantic classes used for fast prototyping and development.
  * These classes **should be used with care** since they can reduce the flexibility and may lead to unsemantical markup.
- *
  * They can reduce the delopment time a lot depending on the scenario helping you to DRY.
- *
  */
+
 
 /* -- floats -- */
 

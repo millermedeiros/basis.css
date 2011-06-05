@@ -1,12 +1,10 @@
-
-/* ===== CORE FRAMEWORK ===== */
-
 /*
- *
- *	Core framework contain classes that shouldn't be edited by the user and that shouldn't be overwritten 
- *	by any circumstance since it can lead to confusions and undesirable behavior.
- *
+ * CORE FRAMEWORK
+ * --------------
+ * Contain classes that shouldn't be edited by the user and that shouldn't be overwritten 
+ * by any circumstance since it can lead to confusions and undesirable behavior.
  */
+
 
 /* clearfix hack [http://j.mp/bestclearfix] */
 .clearfix:before, .clearfix:after, .clearfix > .lastcol:after, .ffluid:after, br.cb{display:block; height:0 !important; line-height:0; overflow:hidden; visibility:hidden}
