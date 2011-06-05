@@ -18,6 +18,13 @@
 .cb{clear:both}
 
 
+/* -- display -- */
+
+.dblock{display:block}
+.dinline{display:inline}
+.dnone{display:none}
+
+
 /* -- centering -- */
 
 /* vertical centering technique [http://www.jakpsatweb.cz/css/css-vertical-center-solution.html] */
