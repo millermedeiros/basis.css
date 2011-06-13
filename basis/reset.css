@@ -24,7 +24,7 @@ table{border-collapse:collapse; border-spacing:0}
 /* ===== CUSTOM RESET ===== */
 
 object{outline:none; display:block; overflow:hidden} /* force redraw on IE8, fix outline/scroll bug on Firefox 3.6, remove unnecessary margin (copied from swffit)  */
-textarea{overflow:auto} /* fix IE */
+textarea{overflow:auto; font:inherit} /* fix scroll on IE and inherit font style */
 iframe{border:0}
 
 /* fix line-height [https://gist.github.com/413930] */
