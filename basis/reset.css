@@ -23,6 +23,8 @@ table{border-collapse:collapse; border-spacing:0}
 
 /* ===== CUSTOM RESET ===== */
 
+html, body{height:100%}
+
 object{outline:none; display:block; overflow:hidden} /* force redraw on IE8, fix outline/scroll bug on Firefox 3.6, remove unnecessary margin (copied from swffit)  */
 textarea{overflow:auto; font:inherit} /* fix scroll on IE and inherit font style */
 iframe{border:0}
