@@ -34,6 +34,8 @@
 
 .hcenter{/* width is required */ margin-left:auto !important; margin-right:auto !important}
 
+.absmid{position:absolute; top:50%; left:50%}
+
 
 /* -- text helpers -- */
 
@@ -52,4 +54,4 @@
 /* -- interaction helpers -- */
 
 .clickable, .btn{cursor:pointer}
-.clickable.disabled, .btn.disabled{cursor:default !important}
+.clickable.disabled, .btn.disabled{cursor:default !important; pointer-events:none}

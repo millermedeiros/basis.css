@@ -27,7 +27,7 @@ so apart from the semantic value and/or you need so many variations that it does
 any sense to have defaults. **Choose the best approach based on the project.**
 
 > These files should provide a base start point but many of the properties should be
-> tweaked to match your needs, it isn't a one-size-fits-all solution.
+> tweaked to match your needs, it **isn't** a one-size-fits-all solution.
 
 
 ## Other Frameworks

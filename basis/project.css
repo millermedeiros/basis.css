@@ -82,7 +82,7 @@ ol.simplelist, .simplelist ol{list-style:decimal}
 ul.simplelist, .simplelist ul{list-style:disc}
 .simplelist li{margin:.5em 0}
 .simplelist ul, .simplelist ol{margin:0 0 1em}
-.simplelist dt{margin:1em 0 .2em}
+.simplelist dt{margin:1em 0 .2em; font-weight:bold}
 .simplelist dd{margin:.5em 0; padding-left:2em}
 
 
@@ -107,7 +107,7 @@ ul.simplelist, .simplelist ul{list-style:disc}
  *
  */
 
-#wrapper{overflow:hidden; /* overflow is important for grid. that way we don't need to use classes like .last, .end, .omega or wrap each row into a different container or wrap .gridholder into another container */}
+#wrapper{overflow:hidden; /* overflow is important for grid (it should be set on the .gridholder parent element). that way we don't need to use classes like .last, .end, .omega or wrap each row into a different container or wrap .gridholder into another container */}
 
 .innerwrapper{width:966px; margin:0 auto} 
 

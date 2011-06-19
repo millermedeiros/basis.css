@@ -1,0 +1,91 @@
+/*
+ * SPACING
+ * -----------------
+ * Non-semantic classes used for fast prototyping and development.
+ * These classes **should be used with care** since they can reduce the flexibility and may lead to unsemantical markup.
+ * They can reduce the delopment time a lot depending on the scenario helping you to DRY.
+ * ----
+ * Heavily inspired by stubbornella/oocss (https://github.com/stubbornella/oocss/)
+ * space module released under BSD license.
+ * ----
+ * spacing helpers:
+ *  p, m = padding, margin
+ *  a, t, r, b, l, h, v = all, top, right, bottom, left, horizontal, vertical
+ *  5, 10, 20, n = size 
+ */
+
+.pt0, .pv0, .pa0{padding-top:0px}
+.pt5, .pv5, .pa5{padding-top:5px}
+.pt10, .pv10, .pa10{padding-top:10px}
+.pt15, .pv15, .pa15{padding-top:15px}
+.pt20, .pv20, .pa20{padding-top:20px}
+.pt30, .pv30, .pa30{padding-top:30px}
+.pt40, .pv40, .pa40{padding-top:40px}
+.pt50, .pv50, .pa50{padding-top:50px}
+.pt60, .pv60, .pa60{padding-top:60px}
+
+.pr0, .ph0, .pa0{padding-right:0px}
+.pr5, .ph5, .pa5{padding-right:5px}
+.pr10, .ph10, .pa10{padding-right:10px}
+.pr15, .ph15, .pa15{padding-right:15px}
+.pr20, .ph20, .pa20{padding-right:20px}
+.pr30, .ph30, .pa30{padding-right:30px}
+.pr40, .ph40, .pa40{padding-right:40px}
+.pr50, .ph50, .pa50{padding-right:50px}
+.pr60, .ph60, .pa60{padding-right:60px}
+
+.pb0, .pv0, .pa0{padding-bottom:0px}
+.pb5, .pv5, .pa5{padding-bottom:5px}
+.pb10, .pv10, .pa10{padding-bottom:10px}
+.pb15, .pv15, .pa15{padding-bottom:15px}
+.pb20, .pv20, .pa20{padding-bottom:20px}
+.pb30, .pv30, .pa30{padding-bottom:30px}
+.pb40, .pv40, .pa40{padding-bottom:40px}
+.pb50, .pv50, .pa50{padding-bottom:50px}
+.pb60, .pv60, .pa60{padding-bottom:60px}
+
+.pl0, .ph0, .pa0{padding-left:0px}
+.pl5, .ph5, .pa5{padding-left:5px}
+.pl10, .ph10, .pa10{padding-left:10px}
+.pl15, .ph15, .pa15{padding-left:15px}
+.pl20, .ph20, .pa20{padding-left:20px}
+.pl30, .ph30, .pa30{padding-left:30px}
+.pl40, .ph40, .pa40{padding-left:40px}
+.pl50, .ph50, .pa50{padding-left:50px}
+.pl60, .ph60, .pa60{padding-left:60px}
+
+.mt0, .mv0, .ma0{margin-top:0px}
+.mt5, .mv5, .ma5{margin-top:5px}
+.mt10, .mv10, .ma10{margin-top:10px}
+.mt15, .mv15, .ma15{margin-top:15px}
+.mt20, .mv20, .ma20{margin-top:20px}
+.mt40, .mv40, .ma40{margin-top:40px}
+.mt50, .mv50, .ma50{margin-top:50px}
+.mt60, .mv60, .ma60{margin-top:60px}
+
+.mr0, .mh0, .ma0{margin-right:0px}
+.mr5, .mh5, .ma5{margin-right:5px}
+.mr10, .mh10, .ma10{margin-right:10px}
+.mr15, .mh15, .ma15{margin-right:15px}
+.mr20, .mh20, .ma20{margin-right:20px}
+.mr40, .mh40, .ma40{margin-right:40px}
+.mr50, .mh50, .ma50{margin-right:50px}
+.mr60, .mh60, .ma60{margin-right:60px}
+
+.mb0, .mv0, .ma0{margin-bottom:0px}
+.mb5, .mv5, .ma5{margin-bottom:5px}
+.mb10, .mv10, .ma10{margin-bottom:10px}
+.mb15, .mv15, .ma15{margin-bottom:15px}
+.mb20, .mv20, .ma20{margin-bottom:20px}
+.mb40, .mv40, .ma40{margin-bottom:40px}
+.mb50, .mv50, .ma50{margin-bottom:50px}
+.mb60, .mv60, .ma60{margin-bottom:60px}
+
+.ml0, .mh0, .ma0{margin-left:0px}
+.ml5, .mh5, .ma5{margin-left:5px}
+.ml10, .mh10, .ma10{margin-left:10px}
+.ml15, .mh15, .ma15{margin-left:15px}
+.ml20, .mh20, .ma20{margin-left:20px}
+.ml40, .mh40, .ma40{margin-left:40px}
+.ml50, .mh50, .ma50{margin-left:50px}
+.ml60, .mh60, .ma60{margin-left:60px}
