@@ -5,7 +5,7 @@
  */
 
 /* parent element of .gridholder should have overflow:hidden to make negative margin-right work as expected */
-.gridholder{margin-right:-18px; width:984px} /* width should be the same as full grid + gutter. it should be used together with .clearfix */
+.gridholder{margin-right:-18px !important; width:984px} /* width should be the same as full grid + gutter. it should be used together with .clearfix */
 .gridholder > .grid{float:left; margin-right:18px !important; padding:0 !important}
 .gutl{margin-left:18px !important}
 .gutr{margin-right:18px !important}
