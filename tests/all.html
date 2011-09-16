@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Sample basis.css</title>
         <link rel="stylesheet" href="../basis/all.css">
-        <style>
+        <style type="text/css">
             /* comment out these styles to see real default values, used only to make it easier to see what is going on */
             #wrapper{padding:18px; overflow:hidden} /* overflow hidden is important for grid classes */
             .fl, .fr, .ffluid, .col, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12,
@@ -35,6 +35,9 @@
                 This is a sample of all styles present on basis.css.
                 </p>
                 <p>Ignore style rules applied directly to elements, background colors and borders, and any other style that is defined outside basis.css, they are used to display elements structure while avoiding to create new classes that aren't part of basis.css. Also ignore CSS classes starting with <code>example-</code>, they were created just to style this document and aren't part of the framework.</p>
+                <p>
+                    Basis.css is divided into modules, which means you can use only the features you need.
+                </p>
             </div>
             <hr class="hr-1" />
 
@@ -557,6 +560,13 @@
                 <div class="grid fgrid-1">.grid.fgrid-1</div>
                 <div class="grid fgrid-1">.grid.fgrid-1</div>
             </div>
+
+            <hr class="hr-1" />
+            <h2 class="h-2">Spacing</h2>
+            <p>
+                Basis also have a spacing module with a few helpers for padding and margin. 
+                Check the <a href="https://github.com/millermedeiros/basis.css/blob/master/basis/spacing.css">source code</a> for more info.
+            </p>
 
             <hr class="hr-1" />
 
