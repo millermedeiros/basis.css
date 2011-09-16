@@ -1,488 +1,488 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Sample basis.css</title>
-		<link rel="stylesheet" href="../basis/all.css">
-		<style>
-			/* comment out these styles to see real default values, used only to make it easier to see what is going on */
-			#wrapper{padding:18px; overflow:hidden} /* overflow hidden is important for grid classes */
-			.fl, .fr, .ffluid, .col, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12,
-			.fgrid-1, .fgrid-2, .fgrid-3, .fgrid-4, .fgrid-5, .fgrid-6, .fgrid-7, .fgrid-8, .fgrid-9, .fgrid-10, .fgrid-11, .fgrid-12, .clickable{outline:1px solid #ccc; background-color:#f5f5f5; margin-bottom:12px}
-			.fcolholder .lastcol, .ffluid{background-color:#e2e2e2; text-align:center}
-			.fl, .fr, .ffluid{padding:12px}
-			.grid{overflow:hidden; white-space:nowrap} /* overflow hidden and nowrap only to show dynamic size without text going out the grid */
-			.col, .fl, .fr, .ffluid{margin:0}
-			.navcenter, .navright, .navleft{outline:1px solid #ccc}
-			.hcenter, .vcenter .inner{background-color:#f5f5f5}
-			
-			.grid .grid, .col .col{background-color:#e2e2e2; margin-top:6px; margin-bottom:12px}
-			.col .col{outline:1px solid #aaa}
-			.grid .grid .grid, .col .col .col{background-color:#f5f5f5}
+    <head>
+        <meta charset="utf-8">
+        <title>Sample basis.css</title>
+        <link rel="stylesheet" href="../basis/all.css">
+        <style>
+            /* comment out these styles to see real default values, used only to make it easier to see what is going on */
+            #wrapper{padding:18px; overflow:hidden} /* overflow hidden is important for grid classes */
+            .fl, .fr, .ffluid, .col, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12,
+            .fgrid-1, .fgrid-2, .fgrid-3, .fgrid-4, .fgrid-5, .fgrid-6, .fgrid-7, .fgrid-8, .fgrid-9, .fgrid-10, .fgrid-11, .fgrid-12, .clickable{outline:1px solid #ccc; background-color:#f5f5f5; margin-bottom:12px}
+            .fcolholder .lastcol, .ffluid{background-color:#e2e2e2; text-align:center}
+            .fl, .fr, .ffluid{padding:12px}
+            .grid{overflow:hidden; white-space:nowrap} /* overflow hidden and nowrap only to show dynamic size without text going out the grid */
+            .col, .fl, .fr, .ffluid{margin:0}
+            .navcenter, .navright, .navleft{outline:1px solid #ccc}
+            .hcenter, .vcenter .inner{background-color:#f5f5f5}
 
-			/* classes starting with `example-` are used just for this document and should be ignored */
-			.example-note{background-color:#efe; padding:6px 18px; border:6px solid #cec; font-size:1.166em; margin:1.5em 0}
+            .grid .grid, .col .col{background-color:#e2e2e2; margin-top:6px; margin-bottom:12px}
+            .col .col{outline:1px solid #aaa}
+            .grid .grid .grid, .col .col .col{background-color:#f5f5f5}
+
+            /* classes starting with `example-` are used just for this document and should be ignored */
+            .example-note{background-color:#efe; padding:6px 18px; border:6px solid #cec; font-size:1.166em; margin:1.5em 0}
             .example-outline, .example-outline *{outline:1px solid #aaa}
             .example-note-2{background-color:#fee; border-color:#ecc}
-		</style>
-	</head>
-	<body>
-		<div id="wrapper" class="clearfix">
-			
-			<h1 class="h-1">Sample of <a href="https://github.com/millermedeiros/basis.css">basis.css</a></h1>
+        </style>
+    </head>
+    <body>
+        <div id="wrapper" class="clearfix">
+
+            <h1 class="h-1">Sample of <a href="https://github.com/millermedeiros/basis.css">basis.css</a></h1>
             <div class="example-note example-note-2">
                 <p>
                 This is a sample of all styles present on basis.css.
                 </p>
                 <p>Ignore style rules applied directly to elements, background colors and borders, and any other style that is defined outside basis.css, they are used to display elements structure while avoiding to create new classes that aren't part of basis.css. Also ignore CSS classes starting with <code>example-</code>, they were created just to style this document and aren't part of the framework.</p>
             </div>
-			<hr class="hr-1" />
-			
-			<h2 class="h-2">Text Styles</h2>
-			<div class="example-note">
-				<p>
-					Don't abuse of these styles, they were created to help fast prototyping and should be avoided since they will reduce your flexibility and may lead to unsemantical markup, use with care. <small> - It is important to note that I use them very often since they reduce a lot the need of extra classes... it all depends on the kind of project you are developing.</small>
-				</p>
-			</div>
-			<p class="big">
-				[.big] Integer posuere lorem eu sem gravida porttitor euismod ipsum tempor. Sed viverra est vel ante mattis sagittis. Praesent in sapien tellus, ac fringilla ligula.
-			</p>
-			<p>
-				[p] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et massa id dui viverra tincidunt. Maecenas ornare urna imperdiet lacus consectetur sed dictum magna pharetra. In interdum luctus facilisis. Fusce vehicula tempor odio, ut accumsan tortor pharetra eu. Duis quis nunc ut sapien interdum tempus volutpat in nisl. Fusce sit amet nulla in ante rutrum bibendum. Aenean porttitor pharetra rutrum. Suspendisse lacinia scelerisque ligula quis varius. Sed in sem sem, ac porta elit. Sed eu nisi a nibh imperdiet <sup>fringilla</sup> eget sit amet urna. Cras porta mi ac lacus ultricies vulputate. Nullam egestas, nulla sed commodo varius, odio nulla bibendum nisi, nec pretium nisi nisl id massa. Suspendisse potenti. Sed id <sub>vehicula</sub> neque. Suspendisse lacinia venenatis dolor ut pretium. Aenean ultrices eros non mi adipiscing vel condimentum urna convallis. Donec volutpat fringilla lectus ac scelerisque. Aenean porta ante in est gravida faucibus. Ut vel ante non metus iaculis rutrum et ac magna. Cras ligula ante, ultricies at venenatis et, mattis non odio. 
-			</p>
-			<p class="small">
-				[.small] Quisque iaculis malesuada vestibulum. Pellentesque sit amet porttitor enim. Proin cursus elementum facilisis. Integer posuere lorem eu sem gravida porttitor euismod ipsum tempor. Sed viverra est vel ante mattis sagittis. Praesent in sapien tellus, ac fringilla ligula.
-			</p>
-			<p class="em">
-				[.em] Nam ultrices, felis viverra porta vehicula, ligula quam sodales ligula, ut dignissim nibh libero eu nisi.
-			</p>
-			<p class="b">
-				 [.b] Donec id felis nec lectus sodales lobortis vel et odio.
-			</p>
-			<p class="del">
-				[.del] Nulla vel quam dui, non posuere erat. Mauris pharetra dictum congue. Phasellus a ullamcorper erat. Nam justo est, accumsan sed bibendum in, pulvinar sit amet odio.
-			</p>
-			<p class="tlower">
-				[.tlower] Nulla vel quam dui, non posuere erat. Mauris pharetra dictum congue. Phasellus a ullamcorper erat. Nam justo est, accumsan sed bibendum in, pulvinar sit amet odio.
-			</p>
-			<p class="tupper">
-				<span class="tnormal">[.tupper]</span> Nulla vel quam dui, non posuere erat. Mauris pharetra dictum congue. Phasellus a ullamcorper erat. Nam justo est, accumsan sed bibendum in, pulvinar sit amet odio.
-			</p>
-			<p class="tcenter">
-				[.tcenter] Nulla vel quam dui, non posuere erat. Mauris pharetra dictum congue. Phasellus a ullamcorper erat. Nam justo est, accumsan sed bibendum in, pulvinar sit amet odio.
-			</p>
-			<p class="tleft">
-				[.tleft] Nulla vel quam dui, non posuere erat. Mauris pharetra dictum congue. Phasellus a ullamcorper erat. Nam justo est, accumsan sed bibendum in, pulvinar sit amet odio.
-			</p>
-			<p class="tright">
-				[.tright] Nulla vel quam dui, non posuere erat. Mauris pharetra dictum congue. Phasellus a ullamcorper erat. Nam justo est, accumsan sed bibendum in, pulvinar sit amet odio.
-			</p>
-			
-			<hr class="hr-1" />
-			
-			<h2 class="h-2">Headings</h2>
-			<div class="example-note">
-				<p>
-					Classes <code>.h-1, .h-2, .h-3, ...</code> should be used only on header elements. It can help you keep proper semantic while changing visual style.
+            <hr class="hr-1" />
+
+            <h2 class="h-2">Text Styles</h2>
+            <div class="example-note">
+                <p>
+                    Don't abuse of these styles, they were created to help fast prototyping and should be avoided since they will reduce your flexibility and may lead to unsemantical markup, use with care. <small> - It is important to note that I use them very often since they reduce a lot the need of extra classes... it all depends on the kind of project you are developing.</small>
+                </p>
+            </div>
+            <p class="big">
+                [.big] Integer posuere lorem eu sem gravida porttitor euismod ipsum tempor. Sed viverra est vel ante mattis sagittis. Praesent in sapien tellus, ac fringilla ligula.
+            </p>
+            <p>
+                [p] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et massa id dui viverra tincidunt. Maecenas ornare urna imperdiet lacus consectetur sed dictum magna pharetra. In interdum luctus facilisis. Fusce vehicula tempor odio, ut accumsan tortor pharetra eu. Duis quis nunc ut sapien interdum tempus volutpat in nisl. Fusce sit amet nulla in ante rutrum bibendum. Aenean porttitor pharetra rutrum. Suspendisse lacinia scelerisque ligula quis varius. Sed in sem sem, ac porta elit. Sed eu nisi a nibh imperdiet <sup>fringilla</sup> eget sit amet urna. Cras porta mi ac lacus ultricies vulputate. Nullam egestas, nulla sed commodo varius, odio nulla bibendum nisi, nec pretium nisi nisl id massa. Suspendisse potenti. Sed id <sub>vehicula</sub> neque. Suspendisse lacinia venenatis dolor ut pretium. Aenean ultrices eros non mi adipiscing vel condimentum urna convallis. Donec volutpat fringilla lectus ac scelerisque. Aenean porta ante in est gravida faucibus. Ut vel ante non metus iaculis rutrum et ac magna. Cras ligula ante, ultricies at venenatis et, mattis non odio.
+            </p>
+            <p class="small">
+                [.small] Quisque iaculis malesuada vestibulum. Pellentesque sit amet porttitor enim. Proin cursus elementum facilisis. Integer posuere lorem eu sem gravida porttitor euismod ipsum tempor. Sed viverra est vel ante mattis sagittis. Praesent in sapien tellus, ac fringilla ligula.
+            </p>
+            <p class="em">
+                [.em] Nam ultrices, felis viverra porta vehicula, ligula quam sodales ligula, ut dignissim nibh libero eu nisi.
+            </p>
+            <p class="b">
+                 [.b] Donec id felis nec lectus sodales lobortis vel et odio.
+            </p>
+            <p class="del">
+                [.del] Nulla vel quam dui, non posuere erat. Mauris pharetra dictum congue. Phasellus a ullamcorper erat. Nam justo est, accumsan sed bibendum in, pulvinar sit amet odio.
+            </p>
+            <p class="tlower">
+                [.tlower] Nulla vel quam dui, non posuere erat. Mauris pharetra dictum congue. Phasellus a ullamcorper erat. Nam justo est, accumsan sed bibendum in, pulvinar sit amet odio.
+            </p>
+            <p class="tupper">
+                <span class="tnormal">[.tupper]</span> Nulla vel quam dui, non posuere erat. Mauris pharetra dictum congue. Phasellus a ullamcorper erat. Nam justo est, accumsan sed bibendum in, pulvinar sit amet odio.
+            </p>
+            <p class="tcenter">
+                [.tcenter] Nulla vel quam dui, non posuere erat. Mauris pharetra dictum congue. Phasellus a ullamcorper erat. Nam justo est, accumsan sed bibendum in, pulvinar sit amet odio.
+            </p>
+            <p class="tleft">
+                [.tleft] Nulla vel quam dui, non posuere erat. Mauris pharetra dictum congue. Phasellus a ullamcorper erat. Nam justo est, accumsan sed bibendum in, pulvinar sit amet odio.
+            </p>
+            <p class="tright">
+                [.tright] Nulla vel quam dui, non posuere erat. Mauris pharetra dictum congue. Phasellus a ullamcorper erat. Nam justo est, accumsan sed bibendum in, pulvinar sit amet odio.
+            </p>
+
+            <hr class="hr-1" />
+
+            <h2 class="h-2">Headings</h2>
+            <div class="example-note">
+                <p>
+                    Classes <code>.h-1, .h-2, .h-3, ...</code> should be used only on header elements. It can help you keep proper semantic while changing visual style.
           Avoid adding style rules to the <code>h1-h6</code> elements to reduce specificity problems and too much overwriting.
-				</p>
+                </p>
         <p>
           You should tweak the values to match the project need and create extra classes if needed (or remove unused ones).
         </p>
-			</div>
-			<h1>[h1] Lorem Ipsum dolor</h1>
-			<h2>[h2] Lorem Ipsum dolor</h2>
-			<h3>[h3] Lorem Ipsum dolor</h3>
-			<h4>[h4] Lorem Ipsum dolor</h4>
-      <h5>[h5] Lorem Ipsum dolor</h5>
-			<h6>[h6] Lorem Ipsum dolor</h6>
-			<h1 class="h-6">[h1.h-6] Lorem Ipsum dolor</h1>
-			<h2 class="h-5">[h2.h-5] Lorem Ipsum dolor</h2>
-			<h3 class="h-4">[h3.h-4] Lorem Ipsum dolor</h3>
-			<h4 class="h-3">[h4.h-3] Lorem Ipsum dolor</h4>
-			<h5 class="h-2">[h5.h-2] Lorem Ipsum dolor</h5>
-			<h6 class="h-1">[h6.h-1] Lorem Ipsum dolor</h6>
-			
-			<hr class="hr-1" />
+            </div>
+            <h1>[h1] Lorem Ipsum dolor</h1>
+            <h2>[h2] Lorem Ipsum dolor</h2>
+            <h3>[h3] Lorem Ipsum dolor</h3>
+            <h4>[h4] Lorem Ipsum dolor</h4>
+            <h5>[h5] Lorem Ipsum dolor</h5>
+            <h6>[h6] Lorem Ipsum dolor</h6>
+            <h1 class="h-6">[h1.h-6] Lorem Ipsum dolor</h1>
+            <h2 class="h-5">[h2.h-5] Lorem Ipsum dolor</h2>
+            <h3 class="h-4">[h3.h-4] Lorem Ipsum dolor</h3>
+            <h4 class="h-3">[h4.h-3] Lorem Ipsum dolor</h4>
+            <h5 class="h-2">[h5.h-2] Lorem Ipsum dolor</h5>
+            <h6 class="h-1">[h6.h-1] Lorem Ipsum dolor</h6>
 
-			<h2 class="h-2">Lists</h2>
+            <hr class="hr-1" />
+
+            <h2 class="h-2">Lists</h2>
 
             <div class="example-note">
-				<p>
-                Note that basis.css removes the default browser styling for lists <small>(margin, padding, list-style, etc..)</small>. It does so since lists can be used for a broad range of tasks and having default values in some cases can lead to a lot of code duplication and cascading conflicts.
-				</p>
-			</div>
-
-
-			<h3 class="h-3">Unordered list (ul.simplelist > li)</h3>
-			<ul class="simplelist">
-				<li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
-				<li>Phasellus et neque at eros lobortis auctor a nec metus.</li>
-				<li>Phasellus id nibh semper risus convallis elementum.
-					<ul>
-						<li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
-						<li>
-							Pellentesque id risus vel lacus malesuada euismod.
-							<ul>
-								<li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
-								<li>
-									Pellentesque id risus vel lacus malesuada euismod.
-									<ul>
-										<li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
-										<li>Pellentesque id risus vel lacus malesuada euismod.</li>
-									</ul>
-								</li>
-								<li>Phasellus et neque at eros lobortis auctor a nec metus.</li>
-							</ul>
-						</li>
-						<li>Phasellus et neque at eros lobortis auctor a nec metus.</li>
-					</ul>
-				</li>
-			</ul>
-			
-			<h3 class="h-3">Ordered Lists (ol.simplelist > li)</h3>
-			<ol class="simplelist">
-				<li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
-				<li>Phasellus et neque at eros lobortis auctor a nec metus.</li>
-				<li>Phasellus id nibh semper risus convallis elementum.
-					<ol>
-						<li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
-						<li>
-							Pellentesque id risus vel lacus malesuada euismod.
-							<ol>
-								<li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
-								<li>
-									Pellentesque id risus vel lacus malesuada euismod.
-									<ol>
-										<li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
-										<li>Pellentesque id risus vel lacus malesuada euismod.</li>
-									</ol>
-								</li>
-								<li>Phasellus et neque at eros lobortis auctor a nec metus.</li>
-							</ol>
-						</li>
-						<li>Phasellus et neque at eros lobortis auctor a nec metus.</li>
-					</ol>
-				</li>
-			</ol>
-			
-			<h3 class="h-3">Definition Lists (dl.simplelist > dt + dd*)</h3>
-			<dl class="simplelist">
-				<dt>Lorem ipsum</dt>
-					<dd>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</dd>
-				<dt>Maecennas ullamcor</dt>
-					<dd>Pellentesque id risus vel lacus malesuada euismod.</dd>
-					<dd>Phasellus et neque at eros lobortis auctor a nec metus.</dd>
-				<dt>Quisque iaculis malesuada</dt>
-					<dd>Phasellus id nibh semper risus convallis elementum.</dd>
-			</dl>
-			
-			<h3 class="h-3">Nav (ul.nav > li > a)</h3>
-			<ul class="nav">
-				<li><a href="#">Nulla porta</a></li>
-				<li><a href="#">Pellentesque id risus</a></li>
-				<li><a href="#">Phasellus et</a></li>
-				<li><a href="#">Phasellus</a></li>
-			</ul>
-			
-			<h3 class="h-3">Nav (ul.nav.navleft > li > a)</h3>
-			<ul class="nav navleft">
-				<li><a href="#">Nulla porta</a></li>
-				<li><a href="#">Pellentesque id risus</a></li>
-				<li><a href="#">Phasellus et</a></li>
-				<li><a href="#">Phasellus</a></li>
-			</ul>
-			
-			<h3 class="h-3">Nav (ul.nav.navright > li > a)</h3>
-			<ul class="nav navright">
-				<li><a href="#">Nulla porta</a></li>
-				<li><a href="#">Pellentesque id risus</a></li>
-				<li><a href="#">Phasellus et</a></li>
-				<li><a href="#">Phasellus</a></li>
-			</ul>
-			
-			<h3 class="h-3">Nav (ul.nav.navcenter > li > a)</h3>
-			<ul class="nav navcenter">
-				<li><a href="#">Nulla porta</a></li>
-				<li><a href="#">Pellentesque id risus</a></li>
-				<li><a href="#">Phasellus et</a></li>
-				<li><a href="#">Phasellus</a></li>
-			</ul>
-			
-			<hr class="hr-1" />
-			
-			<h2 class="h-2">Columns (.clearfix > .col.col-[n]*)</h2>
-			<div class="clearfix tcenter">
-				<div class="col col-1_2">.col.col-1_2</div>
-				<div class="col col-1_2">.col.col-1_2</div>
-				<div class="col col-1_3">.col.col-1_3</div>
-				<div class="col col-2_3">.col.col-2_3</div>
-				<div class="col col-1_4">.col.col-1_4</div>
-				<div class="col col-2_4">.col.col-2_4</div>
-				<div class="col col-1_4">.col.col-1_4</div>
-				<div class="col col-1_5">.col.col-1_5</div>
-				<div class="col col-4_5">.col.col-4_5</div>
-				<div class="col col-1_6">.col.col-1_6</div>
-				<div class="col col-2_6">.col.col-2_6</div>
-				<div class="col col-3_6">.col.col-3_6</div>
-			</div>
-			
-			<h3 class="h-3">&quot;Flexible&quot; last column (.clearfix.fcolholder > .col.col-[n]* + .col.lastcol)</h3>
-			<div class="clearfix fcolholder tcenter">
-				<div class="col col-1_2">.col.col-1_2</div>
-				<div class="col lastcol">.col.lastcol</div>
-				<div class="col col-1_4">.col.col-1_4</div>
-				<div class="col lastcol">.col.lastcol</div>
-				<div class="col col-1_6">.col.col-1_6</div>
-				<div class="col col-1_3">.col.col-1_3</div>
-				<div class="col col-1_6">.col.col-1_6</div>
-				<div class="col lastcol">.col.lastcol</div>
-			</div>
-			
-			<h2 class="h-2">Nested Columns (.clearfix > .col.col-[n]* > .clearfix > .col.col-[n]*)</h2>
-			<div class="clearfix tcenter">
-				<div class="col col-1_2">.col.col-1_2
-					<div class="clearfix">
-						<div class="col col-1_2">.col.col-1_2</div>
-						<div class="col col-1_2">.col.col-1_2</div>
-					</div>
-				</div>
-				<div class="col col-1_2">.col.col-1_2
-					<div class="clearfix">
-						<div class="col col-1_3">.col.col-1_3</div>
-						<div class="col col-2_3">.col.col-2_3</div>
-					</div>
-				</div>
-				<div class="col col-1_1">.col.col-1_1
-					<div class="clearfix">
-						<div class="col col-1_4">.col.col-1_4
-							<div class="clearfix">
-								<div class="col col-1_3">.col.col-1_3</div>
-								<div class="col col-2_3">.col.col-2_3</div>
-							</div>
-						</div>
-						<div class="col col-2_4">.col.col-2_4
-							<div class="clearfix">
-								<div class="col col-1_5">.col.col-1_5</div>
-								<div class="col col-4_5">.col.col-4_5</div>
-							</div>
-						</div>
-						<div class="col col-1_4">.col.col-1_4
-							<div class="clearfix">
-								<div class="col col-1_6">.col.col-1_6</div>
-								<div class="col col-5_6">.col.col-5_6</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<hr class="hr-1" />
-			
-			<h2 class="h-2">Floated Elements</h2>
-			
-			<div class="example-note">
-				<p>
-					These classes are used for quick prototyping. It is usually a better idea to have meaningful names instead of using these helper classes since sometimes in the future a element with class <code>.fl</code> may need to be on the right and that can only be achieved by overwriting the class style (which is very bad since the class name won't have the proper meaning) or updating the markup (so no CSS zen garden for you), use with care... <small> - it can speedup the development a lot and I use them very frequently.</small>
-				</p>
-			</div>
-
-			<h3 class="h-3">.clearfix &gt; .fl + .fr</h3>
-			<div class="clearfix example-outline">
-				<div class="fl">.fl</div>
-				<div class="fr">.fr</div>
-			</div>
-			
-			<h3 class="h-3">.fl + .fr + br.cb</h3>
-			<div class="example-outline">
-				<div class="fl">.fl</div>
-				<div class="fr">.fr</div>
-				<br class="cb" />
-			</div>
-			
-			<h3 class="h-3">.clearfix &gt; .fl + .fr + .ffluid</h3>
-			<div class="clearfix example-outline">
-				<div class="fl">.fl</div>
-				<div class="fr">.fr</div>
-				<div class="ffluid">.ffluid</div>
-			</div>
-			
-			<hr class="hr-1" />
-			
-			<h2 class="h-2">Mouse cursor</h2>
-			<div class="clickable">.clickable</div>
-			<div class="clickable disabled">.clickable.disabled</div>
-			<hr class="hr-1" />
-			
-			<h2 class="h-2">Image Replacement (.ir)</h2>
-			<span class="ir" style="background-image:url(http://30.media.tumblr.com/tumblr_lgd1neNYSL1qbwkzvo1_500.jpg); width:500px; height:333px">this is going to be replaced by an awesome picture</span>
-			<p style="color:#BADA55">#BADA55!</p>
-			
-			<hr class="hr-1" />
-			
-			<h2 class="h-2">Block-level Centering</h2>
-			
-			<h3 class="h-3">.hcenter</h3>
-			<div class="example-outline">
-				<div class="hcenter" style="width:300px">
-					div > .hcenter
-				</div>
-			</div>
-			<p class="small em">
-				*Width of centered element is required.
-			</p>
-			
-			<h3 class="h-3">.vcenter</h3>
-			<div class="vcenter example-outline" style="height:100px">
-				<div class="outer">
-					<div class="inner">
-						.vcenter > .outer > .inner
-					</div>
-				</div>
-			</div>
-			<p class="small em">
-				*Height of external container (.vcenter) is required.
-			</p>
-			
-			<hr class="hr-1" />
-			
-			<h2 class="h-2">Grid</h2>
-			<div class="example-note">
-				<p>
-					Grid is basically a column system with a gutter between columns.
-				</p>
-				<p>
-					The default.css file comes with two grid presets that should be used as <em>implementation reference</em>. <strong>Column sizes and gutter should be tweaked to match actual design.</strong>
-				</p>
-			</div>
-
-			<h3 class="h-3">Static Grid</h3>
-			<div class="example-note">
-				<p>
-                    The class <code>.gridholder</code> should be used together with <code>.clearfix</code> 
-                    Rows are created automatically based on the gridholder and grid columns width.
-				</p>
                 <p>
-                    It is important to note that <strong>parent element</strong> of <code>.gridholder</code> 
-                    <strong>should have</strong> <code>overflow:hidden</code>. It removes the need of creating 
-                    a wrapper for each line or adding classes like: <code>.row, .alpha, .omega, .last, .first, 
+                Note that basis.css removes the default browser styling for lists <small>(margin, padding, list-style, etc..)</small>. It does so since lists can be used for a broad range of tasks and having default values in some cases can lead to a lot of code duplication and cascading conflicts.
+                </p>
+            </div>
+
+
+            <h3 class="h-3">Unordered list (ul.simplelist > li)</h3>
+            <ul class="simplelist">
+                <li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
+                <li>Phasellus et neque at eros lobortis auctor a nec metus.</li>
+                <li>Phasellus id nibh semper risus convallis elementum.
+                    <ul>
+                        <li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
+                        <li>
+                            Pellentesque id risus vel lacus malesuada euismod.
+                            <ul>
+                                <li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
+                                <li>
+                                    Pellentesque id risus vel lacus malesuada euismod.
+                                    <ul>
+                                        <li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
+                                        <li>Pellentesque id risus vel lacus malesuada euismod.</li>
+                                    </ul>
+                                </li>
+                                <li>Phasellus et neque at eros lobortis auctor a nec metus.</li>
+                            </ul>
+                        </li>
+                        <li>Phasellus et neque at eros lobortis auctor a nec metus.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3 class="h-3">Ordered Lists (ol.simplelist > li)</h3>
+            <ol class="simplelist">
+                <li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
+                <li>Phasellus et neque at eros lobortis auctor a nec metus.</li>
+                <li>Phasellus id nibh semper risus convallis elementum.
+                    <ol>
+                        <li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
+                        <li>
+                            Pellentesque id risus vel lacus malesuada euismod.
+                            <ol>
+                                <li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
+                                <li>
+                                    Pellentesque id risus vel lacus malesuada euismod.
+                                    <ol>
+                                        <li>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</li>
+                                        <li>Pellentesque id risus vel lacus malesuada euismod.</li>
+                                    </ol>
+                                </li>
+                                <li>Phasellus et neque at eros lobortis auctor a nec metus.</li>
+                            </ol>
+                        </li>
+                        <li>Phasellus et neque at eros lobortis auctor a nec metus.</li>
+                    </ol>
+                </li>
+            </ol>
+
+            <h3 class="h-3">Definition Lists (dl.simplelist > dt + dd*)</h3>
+            <dl class="simplelist">
+                <dt>Lorem ipsum</dt>
+                    <dd>Nulla porta tincidunt ante, id placerat lacus suscipit quis.</dd>
+                <dt>Maecennas ullamcor</dt>
+                    <dd>Pellentesque id risus vel lacus malesuada euismod.</dd>
+                    <dd>Phasellus et neque at eros lobortis auctor a nec metus.</dd>
+                <dt>Quisque iaculis malesuada</dt>
+                    <dd>Phasellus id nibh semper risus convallis elementum.</dd>
+            </dl>
+
+            <h3 class="h-3">Nav (ul.nav > li > a)</h3>
+            <ul class="nav">
+                <li><a href="#">Nulla porta</a></li>
+                <li><a href="#">Pellentesque id risus</a></li>
+                <li><a href="#">Phasellus et</a></li>
+                <li><a href="#">Phasellus</a></li>
+            </ul>
+
+            <h3 class="h-3">Nav (ul.nav.navleft > li > a)</h3>
+            <ul class="nav navleft">
+                <li><a href="#">Nulla porta</a></li>
+                <li><a href="#">Pellentesque id risus</a></li>
+                <li><a href="#">Phasellus et</a></li>
+                <li><a href="#">Phasellus</a></li>
+            </ul>
+
+            <h3 class="h-3">Nav (ul.nav.navright > li > a)</h3>
+            <ul class="nav navright">
+                <li><a href="#">Nulla porta</a></li>
+                <li><a href="#">Pellentesque id risus</a></li>
+                <li><a href="#">Phasellus et</a></li>
+                <li><a href="#">Phasellus</a></li>
+            </ul>
+
+            <h3 class="h-3">Nav (ul.nav.navcenter > li > a)</h3>
+            <ul class="nav navcenter">
+                <li><a href="#">Nulla porta</a></li>
+                <li><a href="#">Pellentesque id risus</a></li>
+                <li><a href="#">Phasellus et</a></li>
+                <li><a href="#">Phasellus</a></li>
+            </ul>
+
+            <hr class="hr-1" />
+
+            <h2 class="h-2">Columns (.clearfix > .col.col-[n]*)</h2>
+            <div class="clearfix tcenter">
+                <div class="col col-1_2">.col.col-1_2</div>
+                <div class="col col-1_2">.col.col-1_2</div>
+                <div class="col col-1_3">.col.col-1_3</div>
+                <div class="col col-2_3">.col.col-2_3</div>
+                <div class="col col-1_4">.col.col-1_4</div>
+                <div class="col col-2_4">.col.col-2_4</div>
+                <div class="col col-1_4">.col.col-1_4</div>
+                <div class="col col-1_5">.col.col-1_5</div>
+                <div class="col col-4_5">.col.col-4_5</div>
+                <div class="col col-1_6">.col.col-1_6</div>
+                <div class="col col-2_6">.col.col-2_6</div>
+                <div class="col col-3_6">.col.col-3_6</div>
+            </div>
+
+            <h3 class="h-3">&quot;Flexible&quot; last column (.clearfix.fcolholder > .col.col-[n]* + .col.lastcol)</h3>
+            <div class="clearfix fcolholder tcenter">
+                <div class="col col-1_2">.col.col-1_2</div>
+                <div class="col lastcol">.col.lastcol</div>
+                <div class="col col-1_4">.col.col-1_4</div>
+                <div class="col lastcol">.col.lastcol</div>
+                <div class="col col-1_6">.col.col-1_6</div>
+                <div class="col col-1_3">.col.col-1_3</div>
+                <div class="col col-1_6">.col.col-1_6</div>
+                <div class="col lastcol">.col.lastcol</div>
+            </div>
+
+            <h2 class="h-2">Nested Columns (.clearfix > .col.col-[n]* > .clearfix > .col.col-[n]*)</h2>
+            <div class="clearfix tcenter">
+                <div class="col col-1_2">.col.col-1_2
+                    <div class="clearfix">
+                        <div class="col col-1_2">.col.col-1_2</div>
+                        <div class="col col-1_2">.col.col-1_2</div>
+                    </div>
+                </div>
+                <div class="col col-1_2">.col.col-1_2
+                    <div class="clearfix">
+                        <div class="col col-1_3">.col.col-1_3</div>
+                        <div class="col col-2_3">.col.col-2_3</div>
+                    </div>
+                </div>
+                <div class="col col-1_1">.col.col-1_1
+                    <div class="clearfix">
+                        <div class="col col-1_4">.col.col-1_4
+                            <div class="clearfix">
+                                <div class="col col-1_3">.col.col-1_3</div>
+                                <div class="col col-2_3">.col.col-2_3</div>
+                            </div>
+                        </div>
+                        <div class="col col-2_4">.col.col-2_4
+                            <div class="clearfix">
+                                <div class="col col-1_5">.col.col-1_5</div>
+                                <div class="col col-4_5">.col.col-4_5</div>
+                            </div>
+                        </div>
+                        <div class="col col-1_4">.col.col-1_4
+                            <div class="clearfix">
+                                <div class="col col-1_6">.col.col-1_6</div>
+                                <div class="col col-5_6">.col.col-5_6</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr-1" />
+
+            <h2 class="h-2">Floated Elements</h2>
+
+            <div class="example-note">
+                <p>
+                    These classes are used for quick prototyping. It is usually a better idea to have meaningful names instead of using these helper classes since sometimes in the future a element with class <code>.fl</code> may need to be on the right and that can only be achieved by overwriting the class style (which is very bad since the class name won't have the proper meaning) or updating the markup (so no CSS zen garden for you), use with care... <small> - it can speedup the development a lot and I use them very frequently.</small>
+                </p>
+            </div>
+
+            <h3 class="h-3">.clearfix &gt; .fl + .fr</h3>
+            <div class="clearfix example-outline">
+                <div class="fl">.fl</div>
+                <div class="fr">.fr</div>
+            </div>
+
+            <h3 class="h-3">.fl + .fr + br.cb</h3>
+            <div class="example-outline">
+                <div class="fl">.fl</div>
+                <div class="fr">.fr</div>
+                <br class="cb" />
+            </div>
+
+            <h3 class="h-3">.clearfix &gt; .fl + .fr + .ffluid</h3>
+            <div class="clearfix example-outline">
+                <div class="fl">.fl</div>
+                <div class="fr">.fr</div>
+                <div class="ffluid">.ffluid</div>
+            </div>
+
+            <hr class="hr-1" />
+
+            <h2 class="h-2">Mouse cursor</h2>
+            <div class="clickable">.clickable</div>
+            <div class="clickable disabled">.clickable.disabled</div>
+            <hr class="hr-1" />
+
+            <h2 class="h-2">Image Replacement (.ir)</h2>
+            <span class="ir" style="background-image:url(http://30.media.tumblr.com/tumblr_lgd1neNYSL1qbwkzvo1_500.jpg); width:500px; height:333px">this is going to be replaced by an awesome picture</span>
+            <p style="color:#BADA55">#BADA55!</p>
+
+            <hr class="hr-1" />
+
+            <h2 class="h-2">Block-level Centering</h2>
+
+            <h3 class="h-3">.hcenter</h3>
+            <div class="example-outline">
+                <div class="hcenter" style="width:300px">
+                    div > .hcenter
+                </div>
+            </div>
+            <p class="small em">
+                *Width of centered element is required.
+            </p>
+
+            <h3 class="h-3">.vcenter</h3>
+            <div class="vcenter example-outline" style="height:100px">
+                <div class="outer">
+                    <div class="inner">
+                        .vcenter > .outer > .inner
+                    </div>
+                </div>
+            </div>
+            <p class="small em">
+                *Height of external container (.vcenter) is required.
+            </p>
+
+            <hr class="hr-1" />
+
+            <h2 class="h-2">Grid</h2>
+            <div class="example-note">
+                <p>
+                    Grid is basically a column system with a gutter between columns.
+                </p>
+                <p>
+                    The default.css file comes with two grid presets that should be used as <em>implementation reference</em>. <strong>Column sizes and gutter should be tweaked to match actual design.</strong>
+                </p>
+            </div>
+
+            <h3 class="h-3">Static Grid</h3>
+            <div class="example-note">
+                <p>
+                    The class <code>.gridholder</code> should be used together with <code>.clearfix</code>
+                    Rows are created automatically based on the gridholder and grid columns width.
+                </p>
+                <p>
+                    It is important to note that <strong>parent element</strong> of <code>.gridholder</code>
+                    <strong>should have</strong> <code>overflow:hidden</code>. It removes the need of creating
+                    a wrapper for each line or adding classes like: <code>.row, .alpha, .omega, .last, .first,
                     .clear, .cb, etc</code>.
                 </p>
-			</div>
+            </div>
 
-			<h4 class="h-4">All Sizes</h4>
-			<div class="clearfix tcenter gridholder">
-				<div class="cb b" style="margin-bottom:10px">.clearfix.gridholder</div>
-				<div class="grid grid-6">.grid.grid-6</div>
-				<div class="grid grid-6">.grid.grid-6</div>
-				<div class="grid grid-7">.grid.grid-7</div>
-				<div class="grid grid-5">.grid.grid-5</div>
-				<div class="grid grid-8">.grid.grid-8</div>
-				<div class="grid grid-4">.grid.grid-4</div>
-				<div class="grid grid-9">.grid.grid-9</div>
-				<div class="grid grid-3">.grid.grid-3</div>
-				<div class="grid grid-10">.grid.grid-10</div>
-				<div class="grid grid-2">.grid.grid-2</div>
-				<div class="grid grid-11">.grid.grid-11</div>
-				<div class="grid grid-1">.grid.grid-1</div>
-				<div class="grid grid-12">.grid.grid-12</div>
-			</div>
+            <h4 class="h-4">All Sizes</h4>
+            <div class="clearfix tcenter gridholder">
+                <div class="cb b" style="margin-bottom:10px">.clearfix.gridholder</div>
+                <div class="grid grid-6">.grid.grid-6</div>
+                <div class="grid grid-6">.grid.grid-6</div>
+                <div class="grid grid-7">.grid.grid-7</div>
+                <div class="grid grid-5">.grid.grid-5</div>
+                <div class="grid grid-8">.grid.grid-8</div>
+                <div class="grid grid-4">.grid.grid-4</div>
+                <div class="grid grid-9">.grid.grid-9</div>
+                <div class="grid grid-3">.grid.grid-3</div>
+                <div class="grid grid-10">.grid.grid-10</div>
+                <div class="grid grid-2">.grid.grid-2</div>
+                <div class="grid grid-11">.grid.grid-11</div>
+                <div class="grid grid-1">.grid.grid-1</div>
+                <div class="grid grid-12">.grid.grid-12</div>
+            </div>
 
-			<h4 class="h-4">Mixed</h4>
-			<div class="clearfix tcenter gridholder">
-				<div class="cb b" style="margin-bottom:10px">.clearfix.gridholder</div>
-				<div class="grid grid-6">.grid.grid-6</div>
-				<div class="grid grid-2">.grid.grid-2</div>
-				<div class="grid grid-4">.grid.grid-4</div>
-				<div class="grid grid-5">.grid.grid-5</div>
-				<div class="grid grid-3">.grid.grid-3</div>
-				<div class="grid grid-2">.grid.grid-2</div>
-				<div class="grid grid-2">.grid.grid-2</div>
-				<div class="grid grid-1">.grid.grid-1</div>
-				<div class="grid grid-1">.grid.grid-1</div>
-				<div class="grid grid-1">.grid.grid-1</div>
-				<div class="grid grid-1">.grid.grid-1</div>
-				<div class="grid grid-1">.grid.grid-1</div>
-				<div class="grid grid-1">.grid.grid-1</div>
-				<div class="grid grid-1">.grid.grid-1</div>
-				<div class="grid grid-1">.grid.grid-1</div>
-				<div class="grid grid-1">.grid.grid-1</div>
-				<div class="grid grid-1">.grid.grid-1</div>
-				<div class="grid grid-1">.grid.grid-1</div>
-				<div class="grid grid-1">.grid.grid-1</div>
-			</div>
+            <h4 class="h-4">Mixed</h4>
+            <div class="clearfix tcenter gridholder">
+                <div class="cb b" style="margin-bottom:10px">.clearfix.gridholder</div>
+                <div class="grid grid-6">.grid.grid-6</div>
+                <div class="grid grid-2">.grid.grid-2</div>
+                <div class="grid grid-4">.grid.grid-4</div>
+                <div class="grid grid-5">.grid.grid-5</div>
+                <div class="grid grid-3">.grid.grid-3</div>
+                <div class="grid grid-2">.grid.grid-2</div>
+                <div class="grid grid-2">.grid.grid-2</div>
+                <div class="grid grid-1">.grid.grid-1</div>
+                <div class="grid grid-1">.grid.grid-1</div>
+                <div class="grid grid-1">.grid.grid-1</div>
+                <div class="grid grid-1">.grid.grid-1</div>
+                <div class="grid grid-1">.grid.grid-1</div>
+                <div class="grid grid-1">.grid.grid-1</div>
+                <div class="grid grid-1">.grid.grid-1</div>
+                <div class="grid grid-1">.grid.grid-1</div>
+                <div class="grid grid-1">.grid.grid-1</div>
+                <div class="grid grid-1">.grid.grid-1</div>
+                <div class="grid grid-1">.grid.grid-1</div>
+                <div class="grid grid-1">.grid.grid-1</div>
+            </div>
 
-			<h4 class="h-4">Nested</h4>
-			<div class="clearfix tcenter gridholder">
-				<div class="cb b" style="margin-bottom:10px">.clearfix.gridholder</div>
-				<div class="grid grid-12">.grid.grid-12
-					<div class="clearfix gridholder">
-						<div class="grid grid-6">.grid.grid-6
-							<div class="clearfix gridholder">
-								<div class="grid grid-3">.grid.grid-3</div>
-								<div class="grid grid-3">.grid.grid-3</div>
-							</div>
-						</div>
-						<div class="grid grid-2">.grid.grid-2
-							<div class="clearfix gridholder">
-								<div class="grid grid-1">.grid.grid-1</div>
-								<div class="grid grid-1">.grid.grid-1</div>
-							</div>
-						</div>
-						<div class="grid grid-4">.grid.grid-4
-							<div class="clearfix gridholder">
-								<div class="grid grid-2">.grid.grid-2</div>
-								<div class="grid grid-2">.grid.grid-2</div>
-							</div>
-						</div>
-						<div class="grid grid-5">.grid.grid-5
-							<div class="clearfix gridholder">
-								<div class="grid grid-3">.grid.grid-3</div>
-								<div class="grid grid-2">.grid.grid-2</div>
-							</div>
-						</div>
-						<div class="grid grid-3">.grid.grid-3
-							<div class="clearfix gridholder">
-								<div class="grid grid-1">.grid.grid-1</div>
-								<div class="grid grid-1">.grid.grid-1</div>
-								<div class="grid grid-1">.grid.grid-1</div>
-							</div>
-						</div>
-						<div class="grid grid-2">.grid.grid-2
-							<div class="clearfix gridholder">
-								<div class="grid grid-1">.grid.grid-1</div>
-								<div class="grid grid-1">.grid.grid-1</div>
-							</div>
-						</div>
-						<div class="grid grid-2">.grid.grid-2
-							<div class="clearfix gridholder">
-								<div class="grid grid-1">.grid.grid-1</div>
-								<div class="grid grid-1">.grid.grid-1</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+            <h4 class="h-4">Nested</h4>
+            <div class="clearfix tcenter gridholder">
+                <div class="cb b" style="margin-bottom:10px">.clearfix.gridholder</div>
+                <div class="grid grid-12">.grid.grid-12
+                    <div class="clearfix gridholder">
+                        <div class="grid grid-6">.grid.grid-6
+                            <div class="clearfix gridholder">
+                                <div class="grid grid-3">.grid.grid-3</div>
+                                <div class="grid grid-3">.grid.grid-3</div>
+                            </div>
+                        </div>
+                        <div class="grid grid-2">.grid.grid-2
+                            <div class="clearfix gridholder">
+                                <div class="grid grid-1">.grid.grid-1</div>
+                                <div class="grid grid-1">.grid.grid-1</div>
+                            </div>
+                        </div>
+                        <div class="grid grid-4">.grid.grid-4
+                            <div class="clearfix gridholder">
+                                <div class="grid grid-2">.grid.grid-2</div>
+                                <div class="grid grid-2">.grid.grid-2</div>
+                            </div>
+                        </div>
+                        <div class="grid grid-5">.grid.grid-5
+                            <div class="clearfix gridholder">
+                                <div class="grid grid-3">.grid.grid-3</div>
+                                <div class="grid grid-2">.grid.grid-2</div>
+                            </div>
+                        </div>
+                        <div class="grid grid-3">.grid.grid-3
+                            <div class="clearfix gridholder">
+                                <div class="grid grid-1">.grid.grid-1</div>
+                                <div class="grid grid-1">.grid.grid-1</div>
+                                <div class="grid grid-1">.grid.grid-1</div>
+                            </div>
+                        </div>
+                        <div class="grid grid-2">.grid.grid-2
+                            <div class="clearfix gridholder">
+                                <div class="grid grid-1">.grid.grid-1</div>
+                                <div class="grid grid-1">.grid.grid-1</div>
+                            </div>
+                        </div>
+                        <div class="grid grid-2">.grid.grid-2
+                            <div class="clearfix gridholder">
+                                <div class="grid grid-1">.grid.grid-1</div>
+                                <div class="grid grid-1">.grid.grid-1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-			<h3 class="h-3">Using as size unit</h3>
-			<div class="example-note">
-				<p>
-					The classes .grid-[n] can be used as a sizing unit for non-column items. Those classes doesn't contain any default margin/gutter.
-				</p>
-			</div>
-			<div class="grid-1">.grid-1</div>
-			<div class="grid-2">.grid-2</div>
-			<div class="grid-3">.grid-3</div>
-			<div class="grid-4">.grid-4</div>
-			<div class="grid-5">.grid-5</div>
-			<div class="grid-6">.grid-6</div>
-			<div class="grid-7">.grid-7</div>
-			<div class="grid-8">.grid-8</div>
-			<div class="grid-9">.grid-9</div>
-			<div class="grid-10">.grid-10</div>
-			<div class="grid-11">.grid-11</div>
-			<div class="grid-12">.grid-12</div>
-            
+            <h3 class="h-3">Using as size unit</h3>
+            <div class="example-note">
+                <p>
+                    The classes .grid-[n] can be used as a sizing unit for non-column items. Those classes doesn't contain any default margin/gutter.
+                </p>
+            </div>
+            <div class="grid-1">.grid-1</div>
+            <div class="grid-2">.grid-2</div>
+            <div class="grid-3">.grid-3</div>
+            <div class="grid-4">.grid-4</div>
+            <div class="grid-5">.grid-5</div>
+            <div class="grid-6">.grid-6</div>
+            <div class="grid-7">.grid-7</div>
+            <div class="grid-8">.grid-8</div>
+            <div class="grid-9">.grid-9</div>
+            <div class="grid-10">.grid-10</div>
+            <div class="grid-11">.grid-11</div>
+            <div class="grid-12">.grid-12</div>
+
             <h3 class="h-3">Gutter</h3>
             <div class="clearfix">
                 <div class="fl">.fl</div>
@@ -495,75 +495,75 @@
 
             <hr class="hr-1" />
 
-			<h3 class="h-3">Fluid Grid</h3>
-			<div class="example-note">
-				<p>
-					The class <code>.fgridholder</code> should be used together with <code>.clearfix</code>.
-				</p>
-				<p>
-                    Fluid grid classes doesn't match same sizes when used outside <code>.fgridholder</code>. 
-                    So they can't be used on a reliable way outside .fgridholder - that happens because of 
-                    negative margin on .fgridholder, it also wouldn't be reliable since 
-                    <strong>width and gutter are relative to the parent element</strong> so 
-                    .fgrid-[n] will always have different sizes if parent elements have different sizes... 
-                    nesting may not work as expected because of that.
-				</p>
+            <h3 class="h-3">Fluid Grid</h3>
+            <div class="example-note">
                 <p>
-                    It is important to note that <strong>parent element</strong> of <code>.gridholder</code> 
-                    <strong>should have</strong> <code>overflow:hidden</code>. It removes the need of creating 
-                    a wrapper for each line or adding classes like: <code>.row, .alpha, .omega, .last, .first, 
+                    The class <code>.fgridholder</code> should be used together with <code>.clearfix</code>.
+                </p>
+                <p>
+                    Fluid grid classes doesn't match same sizes when used outside <code>.fgridholder</code>.
+                    So they can't be used on a reliable way outside .fgridholder - that happens because of
+                    negative margin on .fgridholder, it also wouldn't be reliable since
+                    <strong>width and gutter are relative to the parent element</strong> so
+                    .fgrid-[n] will always have different sizes if parent elements have different sizes...
+                    nesting may not work as expected because of that.
+                </p>
+                <p>
+                    It is important to note that <strong>parent element</strong> of <code>.gridholder</code>
+                    <strong>should have</strong> <code>overflow:hidden</code>. It removes the need of creating
+                    a wrapper for each line or adding classes like: <code>.row, .alpha, .omega, .last, .first,
                     .clear, .cb, etc</code>.
                 </p>
-			</div>
+            </div>
 
-			<h4 class="h-4">All Sizes</h4>
-			<div class="clearfix tcenter fgridholder">
-				<div class="cb b" style="margin-bottom:10px">.clearfix.fgridholder</div>
-				<div class="grid fgrid-6">.grid.fgrid-6</div>
-				<div class="grid fgrid-6">.grid.fgrid-6</div>
-				<div class="grid fgrid-7">.grid.fgrid-7</div>
-				<div class="grid fgrid-5">.grid.fgrid-5</div>
-				<div class="grid fgrid-8">.grid.fgrid-8</div>
-				<div class="grid fgrid-4">.grid.fgrid-4</div>
-				<div class="grid fgrid-9">.grid.fgrid-9</div>
-				<div class="grid fgrid-3">.grid.fgrid-3</div>
-				<div class="grid fgrid-10">.grid.fgrid-10</div>
-				<div class="grid fgrid-2">.grid.fgrid-2</div>
-				<div class="grid fgrid-11">.grid.fgrid-11</div>
-				<div class="grid fgrid-1">.grid.fgrid-1</div>
-				<div class="grid fgrid-12">.grid.fgrid-12</div>
-			</div>
+            <h4 class="h-4">All Sizes</h4>
+            <div class="clearfix tcenter fgridholder">
+                <div class="cb b" style="margin-bottom:10px">.clearfix.fgridholder</div>
+                <div class="grid fgrid-6">.grid.fgrid-6</div>
+                <div class="grid fgrid-6">.grid.fgrid-6</div>
+                <div class="grid fgrid-7">.grid.fgrid-7</div>
+                <div class="grid fgrid-5">.grid.fgrid-5</div>
+                <div class="grid fgrid-8">.grid.fgrid-8</div>
+                <div class="grid fgrid-4">.grid.fgrid-4</div>
+                <div class="grid fgrid-9">.grid.fgrid-9</div>
+                <div class="grid fgrid-3">.grid.fgrid-3</div>
+                <div class="grid fgrid-10">.grid.fgrid-10</div>
+                <div class="grid fgrid-2">.grid.fgrid-2</div>
+                <div class="grid fgrid-11">.grid.fgrid-11</div>
+                <div class="grid fgrid-1">.grid.fgrid-1</div>
+                <div class="grid fgrid-12">.grid.fgrid-12</div>
+            </div>
 
-			<h4 class="h-4">Mixed</h4>
-			<div class="clearfix tcenter fgridholder">
-				<div class="cb b" style="margin-bottom:10px">.clearfix.fgridholder</div>
-				<div class="grid fgrid-6">.grid.fgrid-6</div>
-				<div class="grid fgrid-2">.grid.fgrid-2</div>
-				<div class="grid fgrid-4">.grid.fgrid-3</div>
-				<div class="grid fgrid-5">.grid.fgrid-5</div>
-				<div class="grid fgrid-3">.grid.fgrid-3</div>
-				<div class="grid fgrid-2">.grid.fgrid-2</div>
-				<div class="grid fgrid-2">.grid.fgrid-2</div>
-				<div class="grid fgrid-1">.grid.fgrid-1</div>
-				<div class="grid fgrid-1">.grid.fgrid-1</div>
-				<div class="grid fgrid-1">.grid.fgrid-1</div>
-				<div class="grid fgrid-1">.grid.fgrid-1</div>
-				<div class="grid fgrid-1">.grid.fgrid-1</div>
-				<div class="grid fgrid-1">.grid.fgrid-1</div>
-				<div class="grid fgrid-1">.grid.fgrid-1</div>
-				<div class="grid fgrid-1">.grid.fgrid-1</div>
-				<div class="grid fgrid-1">.grid.fgrid-1</div>
-				<div class="grid fgrid-1">.grid.fgrid-1</div>
-				<div class="grid fgrid-1">.grid.fgrid-1</div>
-				<div class="grid fgrid-1">.grid.fgrid-1</div>
-			</div>
+            <h4 class="h-4">Mixed</h4>
+            <div class="clearfix tcenter fgridholder">
+                <div class="cb b" style="margin-bottom:10px">.clearfix.fgridholder</div>
+                <div class="grid fgrid-6">.grid.fgrid-6</div>
+                <div class="grid fgrid-2">.grid.fgrid-2</div>
+                <div class="grid fgrid-4">.grid.fgrid-3</div>
+                <div class="grid fgrid-5">.grid.fgrid-5</div>
+                <div class="grid fgrid-3">.grid.fgrid-3</div>
+                <div class="grid fgrid-2">.grid.fgrid-2</div>
+                <div class="grid fgrid-2">.grid.fgrid-2</div>
+                <div class="grid fgrid-1">.grid.fgrid-1</div>
+                <div class="grid fgrid-1">.grid.fgrid-1</div>
+                <div class="grid fgrid-1">.grid.fgrid-1</div>
+                <div class="grid fgrid-1">.grid.fgrid-1</div>
+                <div class="grid fgrid-1">.grid.fgrid-1</div>
+                <div class="grid fgrid-1">.grid.fgrid-1</div>
+                <div class="grid fgrid-1">.grid.fgrid-1</div>
+                <div class="grid fgrid-1">.grid.fgrid-1</div>
+                <div class="grid fgrid-1">.grid.fgrid-1</div>
+                <div class="grid fgrid-1">.grid.fgrid-1</div>
+                <div class="grid fgrid-1">.grid.fgrid-1</div>
+                <div class="grid fgrid-1">.grid.fgrid-1</div>
+            </div>
 
-			<hr class="hr-1" />
+            <hr class="hr-1" />
 
-			<div class="small">
-				&copy; 2011 <a href="http://millermedeiros.com">Miller Medeiros</a>.
-			</div>
+            <div class="small">
+                &copy; 2011 <a href="http://millermedeiros.com">Miller Medeiros</a>.
+            </div>
 
-		</div>
-	</body>
+        </div>
+    </body>
 </html>
