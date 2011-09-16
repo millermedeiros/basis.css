@@ -107,7 +107,7 @@ ul.simplelist, .simplelist ul{list-style:disc}
  *
  */
 
-#wrapper{overflow:hidden; /* overflow is important for grid (it should be set on the .gridholder parent element). that way we don't need to use classes like .last, .end, .omega or wrap each row into a different container or wrap .gridholder into another container */}
+#wrapper{}
 
 .innerwrapper{width:966px; margin:0 auto} 
 

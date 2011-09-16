@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="../basis/all.css">
 		<style>
 			/* comment out these styles to see real default values, used only to make it easier to see what is going on */
-			#wrapper{padding:18px}
+			#wrapper{padding:18px; overflow:hidden} /* overflow hidden is important for grid classes */
 			.fl, .fr, .ffluid, .col, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12,
 			.fgrid-1, .fgrid-2, .fgrid-3, .fgrid-4, .fgrid-5, .fgrid-6, .fgrid-7, .fgrid-8, .fgrid-9, .fgrid-10, .fgrid-11, .fgrid-12, .clickable{outline:1px solid #ccc; background-color:#f5f5f5; margin-bottom:12px}
 			.fcolholder .lastcol, .ffluid{background-color:#e2e2e2; text-align:center}
@@ -22,20 +22,20 @@
 
 			/* classes starting with `example-` are used just for this document and should be ignored */
 			.example-note{background-color:#efe; padding:6px 18px; border:6px solid #cec; font-size:1.166em; margin:1.5em 0}
-      .example-outline, .example-outline *{outline:1px solid #aaa}
-      .example-note-2{background-color:#fee; border-color:#ecc}
+            .example-outline, .example-outline *{outline:1px solid #aaa}
+            .example-note-2{background-color:#fee; border-color:#ecc}
 		</style>
 	</head>
 	<body>
 		<div id="wrapper" class="clearfix">
 			
 			<h1 class="h-1">Sample of <a href="https://github.com/millermedeiros/basis.css">basis.css</a></h1>
-      <div class="example-note example-note-2">
-        <p>
-          This is a sample of all styles present on basis.css.
-        </p>
-        <p>Ignore style rules applied directly to elements, background colors and borders, and any other style that is defined outside basis.css, they are used to display elements structure while avoiding to create new classes that aren't part of basis.css. Also ignore CSS classes starting with <code>example-</code>, they were created just to style this document and aren't part of the framework.</p>
-      </div>
+            <div class="example-note example-note-2">
+                <p>
+                This is a sample of all styles present on basis.css.
+                </p>
+                <p>Ignore style rules applied directly to elements, background colors and borders, and any other style that is defined outside basis.css, they are used to display elements structure while avoiding to create new classes that aren't part of basis.css. Also ignore CSS classes starting with <code>example-</code>, they were created just to style this document and aren't part of the framework.</p>
+            </div>
 			<hr class="hr-1" />
 			
 			<h2 class="h-2">Text Styles</h2>
@@ -359,8 +359,15 @@
 			<h3 class="h-3">Static Grid</h3>
 			<div class="example-note">
 				<p>
-					The class <code>.gridholder</code> when used together with <code>.clearfix</code> removes the need of adding classes like: <code>.row, .alpha, .omega, .last, .first, etc</code>. Rows are created automatically based on the gridholder and grid columns width.
+                    The class <code>.gridholder</code> should be used together with <code>.clearfix</code> 
+                    Rows are created automatically based on the gridholder and grid columns width.
 				</p>
+                <p>
+                    It is important to note that <strong>parent element</strong> of <code>.gridholder</code> 
+                    <strong>should have</strong> <code>overflow:hidden</code>. It removes the need of creating 
+                    a wrapper for each line or adding classes like: <code>.row, .alpha, .omega, .last, .first, 
+                    .clear, .cb, etc</code>.
+                </p>
 			</div>
 
 			<h4 class="h-4">All Sizes</h4>
@@ -491,11 +498,22 @@
 			<h3 class="h-3">Fluid Grid</h3>
 			<div class="example-note">
 				<p>
-					The class <code>.fgridholder</code> when used together with <code>.clearfix</code> removes the need of adding classes like: <code>.row, .alpha, .omega, .last, .first, etc</code>. Rows are created automatically based on the gridholder and grid columns width.
+					The class <code>.fgridholder</code> should be used together with <code>.clearfix</code>.
 				</p>
 				<p>
-					It is important to note that fluid grid classes doesn't match same sizes when used outside <code>.fgridholder</code>. So they can't be used on a reliable way outside .fgridholder - that happens because of negative margin on .fgridholder, it also wouldn't be reliable since <strong>width and gutter are relative to the parent element</strong> so .fgrid-[n] will always have different sizes if parent elements have different sizes... nesting may not work as expected because of that.
+                    Fluid grid classes doesn't match same sizes when used outside <code>.fgridholder</code>. 
+                    So they can't be used on a reliable way outside .fgridholder - that happens because of 
+                    negative margin on .fgridholder, it also wouldn't be reliable since 
+                    <strong>width and gutter are relative to the parent element</strong> so 
+                    .fgrid-[n] will always have different sizes if parent elements have different sizes... 
+                    nesting may not work as expected because of that.
 				</p>
+                <p>
+                    It is important to note that <strong>parent element</strong> of <code>.gridholder</code> 
+                    <strong>should have</strong> <code>overflow:hidden</code>. It removes the need of creating 
+                    a wrapper for each line or adding classes like: <code>.row, .alpha, .omega, .last, .first, 
+                    .clear, .cb, etc</code>.
+                </p>
 			</div>
 
 			<h4 class="h-4">All Sizes</h4>
