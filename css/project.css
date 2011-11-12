@@ -1,12 +1,12 @@
-/* 
+/*
  * PROJECT
  * -------
- * It is impossible to create base styles that works for all kinds 
- * of projects, that's why these styles should be edited in almost 
+ * It is impossible to create base styles that works for all kinds
+ * of projects, that's why these styles should be edited in almost
  * all projects. Use them as an implementation reference.
- * 
- * It may be a good idea to move this file outside the "basis" 
- * folder if you edit it. If the file start getting too large 
+ *
+ * It may be a good idea to move this file outside the "basis"
+ * folder if you edit it. If the file start getting too large
  * split into multiple files to keep it organized.
  */
 
@@ -16,10 +16,10 @@
 
 /*
  * Favor classes over general selectors to increase flexibility of your code.
- *	
+ *
  * Add a bare minimum styling using elements selectors and "enhance it" with classes.
- *	
- * I don't recommend adding any other element selector to this list if you want flexibility, 
+ *
+ * I don't recommend adding any other element selector to this list if you want flexibility,
  * in some cases it is even a good idea to remove all of them and just use classes.
  */
 
@@ -47,8 +47,8 @@ a:hover, a:active{outline:none}
 /*
  * If your project have a regular structure it may be a good idea to add
  * default styles to the headings that match the same style of these classes,
- * see: https://github.com/stubbornella/oocss/blob/master/core/heading/heading.css 
- * for reference. Not using this approach since in many of my projects having 
+ * see: https://github.com/stubbornella/oocss/blob/master/core/heading/heading.css
+ * for reference. Not using this approach since in many of my projects having
  * defaults causes more problems than it solves (many projects have a loose structure).
  */
 .h-1, .h-2, .h-3, .h-4, .h-5, .h-6{font-weight:bold; line-height:1em}
@@ -101,14 +101,14 @@ ul.simplelist, .simplelist ul{list-style:disc}
  * specially for styling child elements (e.g. `#header li`) since it will probably create specificity nightmares
  * create a new class instead (e.g. `.headernav li`).
  *
- * I usually keep IDs for the #wrapper (wraps whole page content, gives more flexibility than using just the body tag), 
- * #header (main site header), #footer (main site footer), #content (main content area) and sometimes #sidebar, 
+ * I usually keep IDs for the #wrapper (wraps whole page content, gives more flexibility than using just the body tag),
+ * #header (main site header), #footer (main site footer), #content (main content area) and sometimes #sidebar,
  * #mainnav and #subnav.
  *
  */
 
 #wrapper{}
 
-.innerwrapper{width:966px; margin:0 auto} 
+.innerwrapper{width:966px; margin:0 auto}
 
 
