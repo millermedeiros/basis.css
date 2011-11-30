@@ -13,19 +13,27 @@
 .fl{float:left !important; _margin-right:-3px}
 .fr{float:right !important; _margin-left:-3px}
 .ffluid{display:table-cell !important; *display:block; width:auto !important}
-.cr{clear:right}
-.cl{clear:left}
-.cb{clear:both}
+.cr{clear:right !important}
+.cl{clear:left !important}
+.cb{clear:both !important}
 
 
 /* -- display -- */
 
-.dblock{display:block}
-.dinline{display:inline}
-.dnone{display:none}
+.dblock{display:block !important}
+.dinline{display:inline !important}
+.dnone{display:none !important}
 
 .transparent{-moz-opacity:0; -webkit-opacity:0; -o-opacity:0; opacity:0; -ms-filter:"alpha(opacity=0)"; filter:alpha(opacity=0)}
 .opaque{-moz-opacity:1; -webkit-opacity:1; -o-opacity:1; opacity:1; -ms-filter:"alpha(opacity=100)"; filter:alpha(opacity=100)}
+
+
+/* -- position -- */
+
+.prelative{position:relative !important}
+.pabsolute{position:absolute !important}
+.pstatic{position:static !important}
+.pfixed{position:fixed !important}
 
 
 /* -- centering -- */
@@ -37,24 +45,24 @@
 
 .hcenter{/* width is required */ margin-left:auto !important; margin-right:auto !important}
 
-.absmid{position:absolute; top:50%; left:50%}
+.absmid{position:absolute !important; top:50% !important; left:50% !important}
 
 
 /* -- text helpers -- */
 
-.tcenter{text-align:center}
-.tleft{text-align:left}
-.tright{text-align:right}
-.tupper{text-transform:uppercase}
-.tlower{text-transform:lowercase}
-.tnormal{text-transform:none}
+.tcenter{text-align:center !important}
+.tleft{text-align:left !important}
+.tright{text-align:right !important}
+.tupper{text-transform:uppercase !important}
+.tlower{text-transform:lowercase !important}
+.tnormal{text-transform:none !important}
 
-.vatop{vertical-align:top}
-.vamiddle{vertical-align:middle}
-.vabottom{vertical-align:bottom}
+.vatop{vertical-align:top !important}
+.vamiddle{vertical-align:middle !important}
+.vabottom{vertical-align:bottom !important}
 
 
 /* -- interaction helpers -- */
 
-.clickable, .btn{cursor:pointer}
-.clickable.disabled, .btn.disabled{cursor:default !important; pointer-events:none}
+.clickable, .btn{cursor:pointer !important}
+.clickable.disabled, .btn.disabled{cursor:default !important; pointer-events:none !important}
