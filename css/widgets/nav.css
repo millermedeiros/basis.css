@@ -1,0 +1,34 @@
+.nav, .nav > li {
+     /* not really required, just to safeguard against ul,ol global definitions */
+    padding: 0;
+    margin: 0;
+    list-style:none;
+}
+
+.navleft {
+    text-align:left;
+}
+
+.navleft > li,
+.navright > li,
+.navcenter > li {
+    display: inline;
+}
+
+.navleft > li > a,
+.navright > li > a,
+.navcenter > li > a {
+    padding: 0 .5em;
+}
+
+.navright {
+    text-align: right;
+}
+
+.navcenter {
+    text-align:center;
+}
+
+.navcenter > li > a {
+    display: inline-block;
+}

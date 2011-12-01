@@ -1,0 +1,96 @@
+/*
+ * SPACING
+ * -----------------
+ * Non-semantic classes used for fast prototyping and development.
+ * These classes **should be used with care** since they can reduce the flexibility and may lead to unsemantical markup.
+ * They can reduce the delopment time a lot depending on the scenario helping you to DRY.
+ * ----
+ * Heavily inspired by stubbornella/oocss (https://github.com/stubbornella/oocss/) space module released under BSD license.
+ * ----
+ * spacing helpers:
+ *  p, m = padding, margin
+ *  a, t, r, b, l, h, v = all, top, right, bottom, left, horizontal, vertical
+ *  0, 5, 10, 15, 20, 30, 40, 50, 60 = size
+ */
+
+.bss-pt0,  .bss-pv0,  .bss-pa0  {padding-top:0       !important}
+.bss-pt5,  .bss-pv5,  .bss-pa5  {padding-top:5px     !important}
+.bss-pt10, .bss-pv10, .bss-pa10 {padding-top:10px    !important}
+.bss-pt15, .bss-pv15, .bss-pa15 {padding-top:15px    !important}
+.bss-pt20, .bss-pv20, .bss-pa20 {padding-top:20px    !important}
+.bss-pt30, .bss-pv30, .bss-pa30 {padding-top:30px    !important}
+.bss-pt40, .bss-pv40, .bss-pa40 {padding-top:40px    !important}
+.bss-pt50, .bss-pv50, .bss-pa50 {padding-top:50px    !important}
+.bss-pt60, .bss-pv60, .bss-pa60 {padding-top:60px    !important}
+
+.bss-pr0,  .bss-ph0,  .bss-pa0  {padding-right:0     !important}
+.bss-pr5,  .bss-ph5,  .bss-pa5  {padding-right:5px   !important}
+.bss-pr10, .bss-ph10, .bss-pa10 {padding-right:10px  !important}
+.bss-pr15, .bss-ph15, .bss-pa15 {padding-right:15px  !important}
+.bss-pr20, .bss-ph20, .bss-pa20 {padding-right:20px  !important}
+.bss-pr30, .bss-ph30, .bss-pa30 {padding-right:30px  !important}
+.bss-pr40, .bss-ph40, .bss-pa40 {padding-right:40px  !important}
+.bss-pr50, .bss-ph50, .bss-pa50 {padding-right:50px  !important}
+.bss-pr60, .bss-ph60, .bss-pa60 {padding-right:60px  !important}
+
+.bss-pb0,  .bss-pv0,  .bss-pa0  {padding-bottom:0    !important}
+.bss-pb5,  .bss-pv5,  .bss-pa5  {padding-bottom:5px  !important}
+.bss-pb10, .bss-pv10, .bss-pa10 {padding-bottom:10px !important}
+.bss-pb15, .bss-pv15, .bss-pa15 {padding-bottom:15px !important}
+.bss-pb20, .bss-pv20, .bss-pa20 {padding-bottom:20px !important}
+.bss-pb30, .bss-pv30, .bss-pa30 {padding-bottom:30px !important}
+.bss-pb40, .bss-pv40, .bss-pa40 {padding-bottom:40px !important}
+.bss-pb50, .bss-pv50, .bss-pa50 {padding-bottom:50px !important}
+.bss-pb60, .bss-pv60, .bss-pa60 {padding-bottom:60px !important}
+
+.bss-pl0,  .bss-ph0,  .bss-pa0  {padding-left:0      !important}
+.bss-pl5,  .bss-ph5,  .bss-pa5  {padding-left:5px    !important}
+.bss-pl10, .bss-ph10, .bss-pa10 {padding-left:10px   !important}
+.bss-pl15, .bss-ph15, .bss-pa15 {padding-left:15px   !important}
+.bss-pl20, .bss-ph20, .bss-pa20 {padding-left:20px   !important}
+.bss-pl30, .bss-ph30, .bss-pa30 {padding-left:30px   !important}
+.bss-pl30, .bss-ph30, .bss-pa30 {padding-left:30px   !important}
+.bss-pl40, .bss-ph40, .bss-pa40 {padding-left:40px   !important}
+.bss-pl50, .bss-ph50, .bss-pa50 {padding-left:50px   !important}
+.bss-pl60, .bss-ph60, .bss-pa60 {padding-left:60px   !important}
+
+.bss-mt0,  .bss-mv0,  .bss-ma0  {margin-top:0        !important}
+.bss-mt5,  .bss-mv5,  .bss-ma5  {margin-top:5px      !important}
+.bss-mt10, .bss-mv10, .bss-ma10 {margin-top:10px     !important}
+.bss-mt15, .bss-mv15, .bss-ma15 {margin-top:15px     !important}
+.bss-mt20, .bss-mv20, .bss-ma20 {margin-top:20px     !important}
+.bss-mt30, .bss-mv30, .bss-ma30 {margin-top:30px     !important}
+.bss-mt40, .bss-mv40, .bss-ma40 {margin-top:40px     !important}
+.bss-mt50, .bss-mv50, .bss-ma50 {margin-top:50px     !important}
+.bss-mt60, .bss-mv60, .bss-ma60 {margin-top:60px     !important}
+
+.bss-mr0,  .bss-mh0,  .bss-ma0  {margin-right:0      !important}
+.bss-mr5,  .bss-mh5,  .bss-ma5  {margin-right:5px    !important}
+.bss-mr10, .bss-mh10, .bss-ma10 {margin-right:10px   !important}
+.bss-mr15, .bss-mh15, .bss-ma15 {margin-right:15px   !important}
+.bss-mr20, .bss-mh20, .bss-ma20 {margin-right:20px   !important}
+.bss-mr30, .bss-mh30, .bss-ma30 {margin-right:30px   !important}
+.bss-mr40, .bss-mh40, .bss-ma40 {margin-right:40px   !important}
+.bss-mr50, .bss-mh50, .bss-ma50 {margin-right:50px   !important}
+.bss-mr60, .bss-mh60, .bss-ma60 {margin-right:60px   !important}
+
+.bss-mb0,  .bss-mv0,  .bss-ma0  {margin-bottom:0     !important}
+.bss-mb5,  .bss-mv5,  .bss-ma5  {margin-bottom:5px   !important}
+.bss-mb10, .bss-mv10, .bss-ma10 {margin-bottom:10px  !important}
+.bss-mb15, .bss-mv15, .bss-ma15 {margin-bottom:15px  !important}
+.bss-mb20, .bss-mv20, .bss-ma20 {margin-bottom:20px  !important}
+.bss-mb30, .bss-mv30, .bss-ma30 {margin-bottom:30px  !important}
+.bss-mb40, .bss-mv40, .bss-ma40 {margin-bottom:40px  !important}
+.bss-mb50, .bss-mv50, .bss-ma50 {margin-bottom:50px  !important}
+.bss-mb60, .bss-mv60, .bss-ma60 {margin-bottom:60px  !important}
+
+.bss-ml0,  .bss-mh0,  .bss-ma0  {margin-left:0       !important}
+.bss-ml5,  .bss-mh5,  .bss-ma5  {margin-left:5px     !important}
+.bss-ml10, .bss-mh10, .bss-ma10 {margin-left:10px    !important}
+.bss-ml15, .bss-mh15, .bss-ma15 {margin-left:15px    !important}
+.bss-ml20, .bss-mh20, .bss-ma20 {margin-left:20px    !important}
+.bss-ml30, .bss-mh30, .bss-ma30 {margin-left:30px    !important}
+.bss-ml40, .bss-mh40, .bss-ma40 {margin-left:40px    !important}
+.bss-ml50, .bss-mh50, .bss-ma50 {margin-left:50px    !important}
+.bss-ml60, .bss-mh60, .bss-ma60 {margin-left:60px    !important}
+

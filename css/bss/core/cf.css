@@ -1,0 +1,18 @@
+/*  based on clearfix hack [http://j.mp/bestclearfix] */
+.bss-cf:before,
+.bss-cf:after,
+br.bss-cf {
+    display: block;
+    height: 0 !important;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.bss-cf:before,
+.bss-cf:after {
+    content: ".";
+}
+
+.bss-cf:after {clear: both;}
+.bss-cf {zoom: 1;} /* IE < 8 */

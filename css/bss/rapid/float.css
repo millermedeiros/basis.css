@@ -1,0 +1,9 @@
+/* -- floats -- */
+
+/* using !important on these rules to ensure user won't override it - .bss-fl should **NEVER** mean .bss-fr !!! */
+.bss-fl{float:left !important; _margin-right:-3px}
+.bss-fr{float:right !important; _margin-left:-3px}
+.bss-ffluid{display:table-cell !important; *display:block; width:auto !important}
+.bss-cr{clear:right !important}
+.bss-cl{clear:left !important}
+.bss-cb{clear:both !important}

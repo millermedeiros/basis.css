@@ -1,0 +1,7 @@
+/* -- position -- */
+
+.bss-prelative{position:relative !important}
+.bss-pabsolute{position:absolute !important}
+.bss-pstatic{position:static !important}
+.bss-pfixed{position:fixed !important}
+
