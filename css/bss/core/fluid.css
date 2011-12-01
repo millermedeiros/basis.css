@@ -1,0 +1,32 @@
+/* Nicole Sullivan zoom-fix hack [http://bit.ly/gpXFlK] */
+
+.bss-cf > .bss-fcol:after,
+.bss-ffluid:after {
+    display: block;
+    height: 0 !important;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.bss-ffluid {
+    *zoom: 1;
+}
+
+.bss-fcolholder:after,
+.bss-fcolholder .bss-fcol:after,
+.bss-ffluid:after {
+    font-size: xx-large;
+    content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+}
+
+.bss-fcolholder .bss-fcol {
+    display: table-cell;
+    float: none;
+    width: auto !important;
+    *display: block;
+    *zoom: 1;
+    _position: relative;
+    _left: -3px;
+    _margin-right: -3px;
+}

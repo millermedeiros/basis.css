@@ -1,0 +1,38 @@
+.simplelist{
+    margin: 1em 0;
+}
+
+.simplelist,
+.simplelist ol,
+.simplelist ul {
+    padding-left: 2em;
+}
+
+ol.simplelist,
+.simplelist ol {
+    list-style: decimal;
+}
+
+ul.simplelist,
+.simplelist ul {
+    list-style: disc;
+}
+
+.simplelist li {
+    margin: 0.5em 0;
+}
+
+.simplelist ul,
+.simplelist ol {
+    margin: 0 0 1em;
+}
+
+.simplelist dt {
+    margin: 1em 0 .2em;
+    font-weight: bold;
+}
+
+.simplelist dd {
+    margin: 0.5em 0;
+    padding-left:2em;
+}

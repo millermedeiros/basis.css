@@ -1,0 +1,6 @@
+
+/* image replacement (borrowed from HTML5 boilerplate) */
+.bss-ir{text-indent:-999em; display:block; overflow:hidden; text-align:left; direction:ltr}
+
+.bss-hidden{display:none !important}
+.bss-hidden, .bss-invisible{visibility:hidden !important}

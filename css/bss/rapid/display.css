@@ -1,0 +1,8 @@
+/* -- display -- */
+
+.bss-dblock{display:block !important}
+.bss-dinline{display:inline !important}
+.bss-dnone{display:none !important}
+
+.bss-transparent{-moz-opacity:0; -webkit-opacity:0; -o-opacity:0; opacity:0; -ms-filter:"alpha(opacity=0)"; filter:alpha(opacity=0)}
+.bss-opaque{-moz-opacity:1; -webkit-opacity:1; -o-opacity:1; opacity:1; -ms-filter:"alpha(opacity=100)"; filter:alpha(opacity=100)}

@@ -1,0 +1,12 @@
+/* -- text helpers -- */
+
+.bss-tcenter{text-align:center !important}
+.bss-tleft{text-align:left !important}
+.bss-tright{text-align:right !important}
+.bss-tupper{text-transform:uppercase !important}
+.bss-tlower{text-transform:lowercase !important}
+.bss-tnormal{text-transform:none !important}
+
+.bss-vatop{vertical-align:top !important}
+.bss-vamiddle{vertical-align:middle !important}
+.bss-vabottom{vertical-align:bottom !important}

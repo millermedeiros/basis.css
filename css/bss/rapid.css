@@ -1,0 +1,13 @@
+/*
+ * RAPID DEVELOPMENT
+ * -----------------
+ * Non-semantic classes used for fast prototyping and development.
+ * These classes **should be used with care** since they can reduce the flexibility and may lead to unsemantical markup.
+ * They can reduce the delopment time a lot depending on the scenario helping you to DRY.
+ */
+@import url(rapid/center.css);
+@import url(rapid/display.css);
+@import url(rapid/float.css);
+@import url(rapid/interaction.css);
+@import url(rapid/position.css);
+@import url(rapid/text.css);

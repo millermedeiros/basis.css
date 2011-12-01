@@ -3,31 +3,105 @@
     <head>
         <meta charset="utf-8">
         <title>Sample basis.css</title>
-        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/master.css">
         <style type="text/css">
-            /* comment out these styles to see real default values, used only to make it easier to see what is going on */
-            #wrapper{padding:18px; overflow:hidden} /* overflow hidden is important for grid classes */
-            .bss-fl, .bss-fr, .bss-ffluid, .bss-col, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12,
-            .fgrid-1, .fgrid-2, .fgrid-3, .fgrid-4, .fgrid-5, .fgrid-6, .fgrid-7, .fgrid-8, .fgrid-9, .fgrid-10, .fgrid-11, .fgrid-12, .bss-clickable{outline:1px solid #ccc; background-color:#f5f5f5; margin-bottom:12px}
-            .bss-fcolholder .bss-lastcol, .bss-ffluid{background-color:#e2e2e2; text-align:center}
-            .bss-fl, .bss-fr, .bss-ffluid{padding:12px}
-            .grid{overflow:hidden; white-space:nowrap} /* overflow hidden and nowrap only to show dynamic size without text going out the grid */
-            .bss-col, .bss-fl, .bss-fr, .bss-ffluid{margin:0}
-            .navcenter, .navright, .navleft{outline:1px solid #ccc}
-            .bss-hcenter, .bss-vcenter .bss-inner{background-color:#f5f5f5}
+            /*
+                ====================================================
+                comment out these styles to see real default values
+                used only to make it easier to see what is going on
+                ====================================================
+            */
 
-            .grid .grid, .bss-col .bss-col{background-color:#e2e2e2; margin-top:6px; margin-bottom:12px}
-            .bss-col .bss-col{outline:1px solid #aaa; overflow:hidden; white-space:nowrap}
-            .grid .grid .grid, .bss-col .bss-col .bss-col{background-color:#f5f5f5}
+            #wrapper {
+                padding:18px;
+                overflow:hidden;
+            }
+
+            /* overflow hidden is important for grid classes */
+            .bss-fl, .bss-fr,
+            .bss-ffluid,
+            .bss-col,
+            .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12,
+            .fgrid-1, .fgrid-2, .fgrid-3, .fgrid-4, .fgrid-5, .fgrid-6, .fgrid-7, .fgrid-8, .fgrid-9, .fgrid-10, .fgrid-11, .fgrid-12,
+            .bss-clickable,
+            .bss-not-selectable {
+                outline:1px solid #ccc;
+                background-color:#f5f5f5;
+                margin-bottom:12px;
+            }
+
+            .bss-fcolholder .bss-fcol,
+            .bss-ffluid {
+                background-color:#e2e2e2;
+                text-align:center;
+            }
+
+            .bss-fl, .bss-fr,
+            .bss-ffluid {
+                padding:12px;
+            }
+
+            .grid {
+                overflow:hidden;
+                white-space:nowrap;
+            }
+
+            /* overflow hidden and nowrap only to show dynamic size without text going out the grid */
+            .bss-col,
+            .bss-fl, .bss-fr,
+            .bss-ffluid {
+                margin:0;
+            }
+
+            .navcenter, .navright, .navleft {
+                outline:1px solid #ccc;
+            }
+
+            .bss-hcenter, .bss-vcenter .bss-inner {
+                background-color:#f5f5f5;
+            }
+
+            .grid .grid,
+            .bss-col .bss-col {
+                background-color:#e2e2e2;
+                margin-top:6px;
+                margin-bottom:12px;
+            }
+
+            .bss-col .bss-col {
+                outline:1px solid #aaa;
+                overflow:hidden;
+                white-space:nowrap;
+            }
+
+            .grid .grid .grid,
+            .bss-col .bss-col .bss-col {
+                background-color:#f5f5f5;
+            }
+
+            .gutl {
+                margin-bottom:1em;
+            }
 
             /* classes starting with `example-` are used just for this document and should be ignored */
-            .example-note{background-color:#efe; padding:6px 18px; border:6px solid #cec; font-size:1.166em; margin:1.5em 0}
-            .example-outline, .example-outline *{outline:1px solid #aaa}
-            .example-note-2{background-color:#fee; border-color:#ecc}
+            .example-note {
+                background-color:#efe;
+                padding:6px 18px;
+                border:6px solid #cec;
+                font-size:1.166em;
+                margin:1.5em 0;
+            }
+            .example-outline, .example-outline *{
+                outline:1px solid #aaa;
+            }
+            .example-note-2{
+                background-color:#fee;
+                border-color:#ecc;
+            }
         </style>
     </head>
     <body>
-        <div id="wrapper" class="bss-clearfix">
+        <div id="wrapper" class="bss-cf">
 
             <h1 class="h-1">Sample of <a href="https://github.com/millermedeiros/basis.css">basis.css</a></h1>
             <div class="example-note example-note-2">
@@ -36,14 +110,14 @@
                 </p>
                 <p>Ignore style rules applied directly to elements, background colors and borders, and any other style that is defined outside basis.css, they are used to display elements structure while avoiding to create new classes that aren't part of basis.css. Also ignore CSS classes starting with <code>example-</code>, they were created just to style this document and aren't part of the framework.</p>
                 <p>
-                    Basis.css is divided into modules, which means you can use only the features you need.
+                Basis.css is divided into modules, which means you can use only the features you need. Right now example is divided by visual groups but I have plans to break this page by each module so it will be easier to see which rules are inside each file.
                 </p>
                 <p>
                     <strong>Basis.css has 2 kinds of classes, the ones prefixed with <code>bss-</code> should NOT be edited by the user and the ones without
                     a prefix should be edited based on the project.</strong>
                 </p>
             </div>
-            <hr class="hr-1" />
+            <hr />
 
             <h2 class="h-2">Text Styles</h2>
             <div class="example-note">
@@ -85,7 +159,7 @@
                 [.bss-tright] Nulla vel quam dui, non posuere erat. Mauris pharetra dictum congue. Phasellus a ullamcorper erat. Nam justo est, accumsan sed bibendum in, pulvinar sit amet odio.
             </p>
 
-            <hr class="hr-1" />
+            <hr />
 
             <h2 class="h-2">Headings</h2>
             <div class="example-note">
@@ -110,7 +184,7 @@
             <h5 class="h-2">[h5.h-2] Lorem Ipsum dolor</h5>
             <h6 class="h-1">[h6.h-1] Lorem Ipsum dolor</h6>
 
-            <hr class="hr-1" />
+            <hr />
 
             <h2 class="h-2">Lists</h2>
 
@@ -216,10 +290,10 @@
                 <li><a href="#">Phasellus</a></li>
             </ul>
 
-            <hr class="hr-1" />
+            <hr />
 
-            <h2 class="h-2">Columns (.bss-clearfix > .bss-col.bss-col-[n]*)</h2>
-            <div class="bss-clearfix bss-tcenter">
+            <h2 class="h-2">Columns (.bss-cf > .bss-col.bss-col-[n]*)</h2>
+            <div class="bss-cf bss-tcenter">
                 <div class="bss-col bss-col-1_2">.bss-col.bss-col-1_2</div>
                 <div class="bss-col bss-col-1_2">.bss-col.bss-col-1_2</div>
                 <div class="bss-col bss-col-1_3">.bss-col.bss-col-1_3</div>
@@ -234,48 +308,48 @@
                 <div class="bss-col bss-col-3_6">.bss-col.bss-col-3_6</div>
             </div>
 
-            <h3 class="h-3">&quot;Flexible&quot; last column (.bss-clearfix.bss-fcolholder > .bss-col.bss-col-[n]* + .bss-col.lastcol)</h3>
-            <div class="bss-clearfix bss-fcolholder bss-tcenter">
+            <h3 class="h-3">&quot;Flexible&quot; last column (.bss-cf.bss-fcolholder > .bss-col.bss-col-[n]* + .bss-col.fcol)</h3>
+            <div class="bss-cf bss-fcolholder bss-tcenter">
                 <div class="bss-col bss-col-1_2">.bss-col.bss-col-1_2</div>
-                <div class="bss-col bss-lastcol">.bss-col.bss-lastcol</div>
+                <div class="bss-col bss-fcol">.bss-col.bss-fcol</div>
                 <div class="bss-col bss-col-1_4">.bss-col.bss-col-1_4</div>
-                <div class="bss-col bss-lastcol">.bss-col.bss-lastcol</div>
+                <div class="bss-col bss-fcol">.bss-col.bss-fcol</div>
                 <div class="bss-col bss-col-1_6">.bss-col.bss-col-1_6</div>
                 <div class="bss-col bss-col-1_3">.bss-col.bss-col-1_3</div>
                 <div class="bss-col bss-col-1_6">.bss-col.bss-col-1_6</div>
-                <div class="bss-col bss-lastcol">.bss-col.bss-lastcol</div>
+                <div class="bss-col bss-fcol">.bss-col.bss-fcol</div>
             </div>
 
-            <h2 class="h-2">Nested Columns (.bss-clearfix > .bss-col.bss-col-[n]* > .bss-clearfix > .bss-col.bss-col-[n]*)</h2>
-            <div class="bss-clearfix bss-tcenter">
+            <h2 class="h-2">Nested Columns (.bss-cf > .bss-col.bss-col-[n]* > .bss-cf > .bss-col.bss-col-[n]*)</h2>
+            <div class="bss-cf bss-tcenter">
                 <div class="bss-col bss-col-1_2">.bss-col.bss-col-1_2
-                    <div class="bss-clearfix">
+                    <div class="bss-cf">
                         <div class="bss-col bss-col-1_2">.bss-col.bss-col-1_2</div>
                         <div class="bss-col bss-col-1_2">.bss-col.bss-col-1_2</div>
                     </div>
                 </div>
                 <div class="bss-col bss-col-1_2">.bss-col.bss-col-1_2
-                    <div class="bss-clearfix">
+                    <div class="bss-cf">
                         <div class="bss-col bss-col-1_3">.bss-col.bss-col-1_3</div>
                         <div class="bss-col bss-col-2_3">.bss-col.bss-col-2_3</div>
                     </div>
                 </div>
                 <div class="bss-col bss-col-1_1">.bss-col.bss-col-1_1
-                    <div class="bss-clearfix">
+                    <div class="bss-cf">
                         <div class="bss-col bss-col-1_4">.bss-col.bss-col-1_4
-                            <div class="bss-clearfix">
+                            <div class="bss-cf">
                                 <div class="bss-col bss-col-1_3">.bss-col.bss-col-1_3</div>
                                 <div class="bss-col bss-col-2_3">.bss-col.bss-col-2_3</div>
                             </div>
                         </div>
                         <div class="bss-col bss-col-2_4">.bss-col.bss-col-2_4
-                            <div class="bss-clearfix">
+                            <div class="bss-cf">
                                 <div class="bss-col bss-col-1_5">.bss-col.bss-col-1_5</div>
                                 <div class="bss-col bss-col-4_5">.bss-col.bss-col-4_5</div>
                             </div>
                         </div>
                         <div class="bss-col bss-col-1_4">.bss-col.bss-col-1_4
-                            <div class="bss-clearfix">
+                            <div class="bss-cf">
                                 <div class="bss-col bss-col-1_6">.bss-col.bss-col-1_6</div>
                                 <div class="bss-col bss-col-5_6">.bss-col.bss-col-5_6</div>
                             </div>
@@ -284,7 +358,7 @@
                 </div>
             </div>
 
-            <hr class="hr-1" />
+            <hr />
 
             <h2 class="h-2">Floated Elements</h2>
 
@@ -294,8 +368,8 @@
                 </p>
             </div>
 
-            <h3 class="h-3">.bss-clearfix &gt; .bss-fl + .bss-fr</h3>
-            <div class="bss-clearfix example-outline">
+            <h3 class="h-3">.bss-cf &gt; .bss-fl + .bss-fr</h3>
+            <div class="bss-cf example-outline">
                 <div class="bss-fl">.bss-fl</div>
                 <div class="bss-fr">.bss-fr</div>
             </div>
@@ -307,25 +381,26 @@
                 <br class="bss-cb" />
             </div>
 
-            <h3 class="h-3">.bss-clearfix &gt; .bss-fl + .bss-fr + .bss-ffluid</h3>
-            <div class="bss-clearfix example-outline">
+            <h3 class="h-3">.bss-cf &gt; .bss-fl + .bss-fr + .bss-ffluid</h3>
+            <div class="bss-cf example-outline">
                 <div class="bss-fl">.bss-fl</div>
                 <div class="bss-fr">.bss-fr</div>
                 <div class="bss-ffluid">.bss-ffluid</div>
             </div>
 
-            <hr class="hr-1" />
+            <hr />
 
             <h2 class="h-2">Mouse cursor</h2>
             <div class="bss-clickable">.bss-clickable</div>
             <div class="bss-clickable bss-disabled">.bss-clickable.bss-disabled</div>
-            <hr class="hr-1" />
+            <div class="bss-not-selectable">.bss-not-selectable</div>
+            <hr />
 
             <h2 class="h-2">Image Replacement (.bss-ir)</h2>
             <span class="bss-ir" style="background-image:url(http://30.media.tumblr.com/tumblr_lgd1neNYSL1qbwkzvo1_500.jpg); width:500px; height:333px">this is going to be replaced by an awesome picture</span>
             <p style="color:#BADA55">#BADA55!</p>
 
-            <hr class="hr-1" />
+            <hr />
 
             <h2 class="h-2">Block-level Centering</h2>
 
@@ -351,7 +426,7 @@
                 *Height of external container (.bss-vcenter) is required.
             </p>
 
-            <hr class="hr-1" />
+            <hr />
 
             <h2 class="h-2">Grid</h2>
             <div class="example-note">
@@ -366,7 +441,7 @@
             <h3 class="h-3">Static Grid</h3>
             <div class="example-note">
                 <p>
-                    The class <code>.gridholder</code> should be used together with <code>.bss-clearfix</code>
+                    The class <code>.gridholder</code> should be used together with <code>.bss-cf</code>
                     Rows are created automatically based on the gridholder and grid columns width.
                 </p>
                 <p>
@@ -378,8 +453,8 @@
             </div>
 
             <h4 class="h-4">All Sizes</h4>
-            <div class="bss-clearfix bss-tcenter gridholder">
-                <div class="bss-cb b" style="margin-bottom:10px">.bss-clearfix.gridholder</div>
+            <div class="bss-cf bss-tcenter gridholder">
+                <div class="bss-cb b" style="margin-bottom:10px">.bss-cf.gridholder</div>
                 <div class="grid grid-6">.grid.grid-6</div>
                 <div class="grid grid-6">.grid.grid-6</div>
                 <div class="grid grid-7">.grid.grid-7</div>
@@ -396,8 +471,8 @@
             </div>
 
             <h4 class="h-4">Mixed</h4>
-            <div class="bss-clearfix bss-tcenter gridholder">
-                <div class="bss-cb b" style="margin-bottom:10px">.bss-clearfix.gridholder</div>
+            <div class="bss-cf bss-tcenter gridholder">
+                <div class="bss-cb b" style="margin-bottom:10px">.bss-cf.gridholder</div>
                 <div class="grid grid-6">.grid.grid-6</div>
                 <div class="grid grid-2">.grid.grid-2</div>
                 <div class="grid grid-4">.grid.grid-4</div>
@@ -420,49 +495,49 @@
             </div>
 
             <h4 class="h-4">Nested</h4>
-            <div class="bss-clearfix bss-tcenter gridholder">
-                <div class="bss-cb b" style="margin-bottom:10px">.bss-clearfix.gridholder</div>
+            <div class="bss-cf bss-tcenter gridholder">
+                <div class="bss-cb b" style="margin-bottom:10px">.bss-cf.gridholder</div>
                 <div class="grid grid-12">.grid.grid-12
-                    <div class="bss-clearfix gridholder">
+                    <div class="bss-cf gridholder">
                         <div class="grid grid-6">.grid.grid-6
-                            <div class="bss-clearfix gridholder">
+                            <div class="bss-cf gridholder">
                                 <div class="grid grid-3">.grid.grid-3</div>
                                 <div class="grid grid-3">.grid.grid-3</div>
                             </div>
                         </div>
                         <div class="grid grid-2">.grid.grid-2
-                            <div class="bss-clearfix gridholder">
+                            <div class="bss-cf gridholder">
                                 <div class="grid grid-1">.grid.grid-1</div>
                                 <div class="grid grid-1">.grid.grid-1</div>
                             </div>
                         </div>
                         <div class="grid grid-4">.grid.grid-4
-                            <div class="bss-clearfix gridholder">
+                            <div class="bss-cf gridholder">
                                 <div class="grid grid-2">.grid.grid-2</div>
                                 <div class="grid grid-2">.grid.grid-2</div>
                             </div>
                         </div>
                         <div class="grid grid-5">.grid.grid-5
-                            <div class="bss-clearfix gridholder">
+                            <div class="bss-cf gridholder">
                                 <div class="grid grid-3">.grid.grid-3</div>
                                 <div class="grid grid-2">.grid.grid-2</div>
                             </div>
                         </div>
                         <div class="grid grid-3">.grid.grid-3
-                            <div class="bss-clearfix gridholder">
+                            <div class="bss-cf gridholder">
                                 <div class="grid grid-1">.grid.grid-1</div>
                                 <div class="grid grid-1">.grid.grid-1</div>
                                 <div class="grid grid-1">.grid.grid-1</div>
                             </div>
                         </div>
                         <div class="grid grid-2">.grid.grid-2
-                            <div class="bss-clearfix gridholder">
+                            <div class="bss-cf gridholder">
                                 <div class="grid grid-1">.grid.grid-1</div>
                                 <div class="grid grid-1">.grid.grid-1</div>
                             </div>
                         </div>
                         <div class="grid grid-2">.grid.grid-2
-                            <div class="bss-clearfix gridholder">
+                            <div class="bss-cf gridholder">
                                 <div class="grid grid-1">.grid.grid-1</div>
                                 <div class="grid grid-1">.grid.grid-1</div>
                             </div>
@@ -491,21 +566,21 @@
             <div class="grid-12">.grid-12</div>
 
             <h3 class="h-3">Gutter</h3>
-            <div class="bss-clearfix">
+            <div class="bss-cf">
                 <div class="bss-fl">.bss-fl</div>
                 <div class="bss-fl grid-3 gutl">.bss-fl.grid-3.gutl</div>
             </div>
-            <div class="bss-clearfix">
+            <div class="bss-cf">
                 <div class="bss-fl grid-3 gutr">.bss-fl.grid-3.gutr</div>
                 <div class="bss-fl">.bss-fl</div>
             </div>
 
-            <hr class="hr-1" />
+            <hr />
 
             <h3 class="h-3">Fluid Grid</h3>
             <div class="example-note">
                 <p>
-                    The class <code>.fgridholder</code> should be used together with <code>.bss-clearfix</code>.
+                    The class <code>.fgridholder</code> should be used together with <code>.bss-cf</code>.
                 </p>
                 <p>
                     Fluid grid classes doesn't match same sizes when used outside <code>.fgridholder</code>.
@@ -524,8 +599,8 @@
             </div>
 
             <h4 class="h-4">All Sizes</h4>
-            <div class="bss-clearfix bss-tcenter fgridholder">
-                <div class="bss-cb b" style="margin-bottom:10px">.bss-clearfix.fgridholder</div>
+            <div class="bss-cf bss-tcenter fgridholder">
+                <div class="bss-cb b" style="margin-bottom:10px">.bss-cf.fgridholder</div>
                 <div class="grid fgrid-6">.grid.fgrid-6</div>
                 <div class="grid fgrid-6">.grid.fgrid-6</div>
                 <div class="grid fgrid-7">.grid.fgrid-7</div>
@@ -542,8 +617,8 @@
             </div>
 
             <h4 class="h-4">Mixed</h4>
-            <div class="bss-clearfix bss-tcenter fgridholder">
-                <div class="bss-cb b" style="margin-bottom:10px">.bss-clearfix.fgridholder</div>
+            <div class="bss-cf bss-tcenter fgridholder">
+                <div class="bss-cb b" style="margin-bottom:10px">.bss-cf.fgridholder</div>
                 <div class="grid fgrid-6">.grid.fgrid-6</div>
                 <div class="grid fgrid-2">.grid.fgrid-2</div>
                 <div class="grid fgrid-4">.grid.fgrid-3</div>
@@ -565,14 +640,14 @@
                 <div class="grid fgrid-1">.grid.fgrid-1</div>
             </div>
 
-            <hr class="hr-1" />
+            <hr />
             <h2 class="h-2">Spacing</h2>
             <p>
                 Basis also have a spacing module with a few helpers for padding and margin.
-                Check the <a href="https://github.com/millermedeiros/basis.css/blob/master/basis/spacing.css">source code</a> for more info.
+                Check the <a href="https://github.com/millermedeiros/basis.css/blob/master/css/bss/spacing.css">source code</a> for more info.
             </p>
 
-            <hr class="hr-1" />
+            <hr />
 
             <div class="small">
                 &copy; 2011 <a href="http://millermedeiros.com">Miller Medeiros</a>.

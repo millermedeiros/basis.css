@@ -1,0 +1,11 @@
+/*
+* CORE FRAMEWORK
+* --------------
+* Contain classes that shouldn't be edited by the user and that shouldn't be
+* overwritten by any circumstance since it can lead to confusions and
+* undesirable behavior.
+*/
+@import url(core/cf.css);
+@import url(core/fluid.css);
+@import url(core/col.css);
+@import url(core/display.css);
