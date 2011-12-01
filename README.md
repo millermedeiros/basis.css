@@ -99,7 +99,7 @@ that's why these styles should be edited in almost all projects. Use them as an
 implementation reference.
 
 
-## widgets
+### widgets
 
 Usually elements that are shared across multiple pages and that aren't directly
 related with the core structure (e.g. ui components)
@@ -110,12 +110,11 @@ related with the core structure (e.g. ui components)
 ## Browser Support
 
 This project targets *modern* browsers (IE 7+, FF 3+, Chrome 4+, Safari 4+,
-Opera 10+). Please note that not all features been tested on all these browsers
-yet.
+Opera 10+).
 
 If you need to support IE 6 search for descendant selectors `>`, if you delete
-them code will probably work on IE6 as well, decedant selectors are good to
-contol scope of the rule (so we can have nested elements without breaking
+them code will probably work on IE6 as well, descendant selectors are good to
+control scope of the rule (so we can have nested elements without breaking
 things...)
 
 
@@ -133,7 +132,7 @@ display style isn't directly related with the semantic value or if you are sure
 it won't degrade maintainability.
 
 
-### Compress/combine CSS before deploy !!!
+### Compress/combine CSS files before deploy !!!
 
 It is really important that you run a CSS compiler to minify and merge
 `@import` calls to [reduce the number of HTTP
@@ -141,7 +140,7 @@ requests](http://developer.yahoo.com/performance/rules.html#num_http) and
 increase load time performance. I've been using [RequireJS
 optimizer](http://requirejs.org/docs/optimization.html#onecss) but you can use
 other tools like [stylus](http://learnboost.github.com/stylus/),
-[sass](http://sass-lang.com/), [less](http://lesscss.org/), etc, since they
+[sass](http://sass-lang.com/), [less](http://lesscss.org/), since they
 also merge imported style sheets. (it is not because Basis is written in plain
 CSS that you can't use a pre-processor...)
 
