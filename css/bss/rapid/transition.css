@@ -1,0 +1,19 @@
+/*
+ * useful when you need to toggle css transitions through JS
+ */
+
+.bss-no-trans {
+    -webkit-transition-property: none !important;
+       -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+         -o-transition-property: none !important;
+            transition-property: none !important;
+}
+
+.bss-trans {
+    -webkit-transition-property: all !important;
+       -moz-transition-property: all !important;
+        -ms-transition-property: all !important;
+         -o-transition-property: all !important;
+            transition-property: all !important;
+}
