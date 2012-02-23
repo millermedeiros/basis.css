@@ -1,7 +1,11 @@
 /*
+  RESET
+ */
+@import url(core/reset.css);
+
+/*
   BASIS
 */
-@import url(bss/reset.css);
 @import url(bss/core.css);
 @import url(bss/rapid.css);
 @import url(bss/spacing.css);
