@@ -1,18 +1,7 @@
 /*
-  RESET
- */
-@import url(core/reset.css);
-
-/*
-  BASIS
-*/
-@import url(bss/core.css);
-@import url(bss/rapid.css);
-@import url(bss/spacing.css);
-
-/*
   CORE
 */
+@import url(core/reset.css);
 @import url(core/tags.css);
 @import url(core/grid.css);
 @import url(core/fgrid.css);
@@ -24,3 +13,10 @@
 */
 @import url(widgets/nav.css);
 @import url(widgets/simplelist.css);
+
+/*
+  BASIS
+*/
+@import url(bss/core.css);
+@import url(bss/rapid.css);
+@import url(bss/spacing.css);

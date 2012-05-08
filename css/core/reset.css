@@ -23,27 +23,91 @@ table{border-collapse:collapse; border-spacing:0}
 
 /* ===== CUSTOM RESET ===== */
 
-html{font-size:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%} /* prevent text resize on orientation change */
-html, body{height:100%}
+html {
+    font-size:100%;
+    /* prevent text resize on orientation change */
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}
 
-object{outline:none; display:block; overflow:hidden} /* force redraw on IE8, fix outline/scroll bug on Firefox 3.6, remove unnecessary margin (copied from swffit)  */
-iframe{border:0}
-img{border:0; -ms-interpolation-mode:bicubic} /* border inside links on IE6-7 and also improves scaling on IE */
+html,
+body {
+    height:100%;
+}
 
-button, input, select, textarea{font-size:100%; vertical-align:baseline; *vertical-align:middle} /* font-size doesn't inherit in some browsers */
-button, input{line-height:normal} /* fix FF3-4 line-height */
+object {
+    /* force redraw on IE8, fix outline/scroll bug on Firefox 3.6, remove unnecessary margin (copied from swffit)  */
+    outline:none;
+    display:block;
+    overflow:hidden;
+}
+
+iframe {
+    border:0;
+}
+
+img {
+    /* border inside links on IE6-7 and also improves scaling on IE */
+    border:0;
+    -ms-interpolation-mode:bicubic;
+}
+
+button,
+input,
+select,
+textarea {
+    /* font-size doesn't inherit in some browsers */
+    font-size:100%;
+    vertical-align:baseline;
+    *vertical-align:middle;
+}
+
+button,
+input {
+    /* fix FF3-4 line-height */
+    line-height:normal;
+}
 
 /* borrowed from normalize.css */
-button, input[type="button"], input[type="reset"], input[type="submit"]{cursor:pointer; -webkit-appearance:button; *overflow: visible}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor:pointer;
+    -webkit-appearance:button;
+    *overflow: visible;
+}
 
 /* www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
-button::-moz-focus-inner, input::-moz-focus-inner{border:0; padding:0}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border:0;
+    padding:0;
+}
 
-textarea{overflow:auto; font:inherit; vertical-align:top} /* fix scroll on IE and inherit font style */
+textarea {
+    /* fix scroll on IE and inherit font style */
+    overflow:auto;
+    font:inherit;
+    vertical-align:top;
+}
 
-address{font-style:normal} /* IE use italic by default */
+address {
+    /* IE use italic by default */
+    font-style:normal;
+}
 
 /* fix line-height [https://gist.github.com/413930] */
-sup, sub{line-height:0; font-size:.75em; position:relative; vertical-align:baseline}
-sup{top:-0.5em}
-sub{bottom:-0.25em}
+sup,
+sub {
+    line-height:0;
+    font-size:.75em;
+    position:relative;
+    vertical-align:baseline;
+}
+sup {
+    top:-0.5em;
+}
+sub {
+    bottom:-0.25em;
+}
