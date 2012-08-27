@@ -70,12 +70,17 @@ input {
 
 /* borrowed from normalize.css */
 button,
-input[type="button"],
+html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    cursor:pointer;
     -webkit-appearance:button;
+    cursor:pointer;
     *overflow: visible;
+}
+
+button[disabled],
+input[disabled] {
+    cursor: default;
 }
 
 /* www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
@@ -83,6 +88,16 @@ button::-moz-focus-inner,
 input::-moz-focus-inner {
     border:0;
     padding:0;
+}
+
+/* removes ipad default styling for text inputs */
+input[type="text"],
+input[type="password"],
+textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
 }
 
 textarea {
