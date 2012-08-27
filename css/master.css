@@ -1,4 +1,11 @@
 /*
+ Beware that IE has a limit of 31 imported stylesheets and that it degrades
+ page load performance on all borwsers so make sure you inline all the imports
+ before deploy.
+ */
+
+
+/*
   CORE
 */
 @import url(core/reset.css);
@@ -17,6 +24,16 @@
 /*
   BASIS
 */
-@import url(bss/core.css);
-@import url(bss/rapid.css);
-@import url(bss/spacing.css);
+@import url(core/cf.css);
+@import url(core/col.css);
+@import url(core/display.css);
+@import url(core/fluid.css);
+
+@import url(rapid/center.css);
+@import url(rapid/display.css);
+@import url(rapid/float.css);
+@import url(rapid/interaction.css);
+@import url(rapid/position.css);
+@import url(rapid/spacing.css);
+@import url(rapid/text.css);
+@import url(rapid/transition.css);
