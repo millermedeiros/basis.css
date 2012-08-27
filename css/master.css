@@ -24,16 +24,16 @@
 /*
   BASIS
 */
-@import url(core/cf.css);
-@import url(core/col.css);
-@import url(core/display.css);
-@import url(core/fluid.css);
+@import url(bss/core/cf.css);
+@import url(bss/core/col.css);
+@import url(bss/core/display.css);
+@import url(bss/core/fluid.css);
 
-@import url(rapid/center.css);
-@import url(rapid/display.css);
-@import url(rapid/float.css);
-@import url(rapid/interaction.css);
-@import url(rapid/position.css);
-@import url(rapid/spacing.css);
-@import url(rapid/text.css);
-@import url(rapid/transition.css);
+@import url(bss/rapid/center.css);
+@import url(bss/rapid/display.css);
+@import url(bss/rapid/float.css);
+@import url(bss/rapid/interaction.css);
+@import url(bss/rapid/position.css);
+@import url(bss/rapid/spacing.css);
+@import url(bss/rapid/text.css);
+@import url(bss/rapid/transition.css);
