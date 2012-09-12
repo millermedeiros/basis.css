@@ -1,0 +1,81 @@
+/*
+ .btn class is used to normalize the button behavior across browsers
+ it should be used as a base class and different button styles should augment it.
+ It can be used on <button>, <a>, <div>, <span>, etc.
+
+    example markup:
+        button[type=button].btn > span.btn-label
+        a.btn > .btn-label
+        .btn > .btn-label
+
+  heavily inspired by: http://stopdesign.com/archive/2009/02/04/recreating-the-button.html
+ */
+
+.btn {
+    display: inline-block; *display: inline; *zoom: 1;
+    margin: 0; padding: 0; border: 0;
+    line-height: 1;
+    text-decoration: none;
+    overflow: visible; vertical-align: middle;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: inherit; /* FF uses "buttontext" by default or link color */
+    text-align: center; /* <button> has align center by default */
+    font-family: inherit; /* FF uses a custom font */
+}
+
+/*
+ * The size of the button should be controlled by the .btn-label
+ * this makes it easier to style <button> and <a> elements in a
+ * crossbrowser way.
+ * It also makes the .btn component more flexible since we can use
+ * this extra element to add icons or to implement the "sliding doors"
+ * technique.
+ */
+.btn-label {
+    display: block; position: relative;
+    text-align: center;
+    text-decoration: none !important;
+    height: 1em; line-height: 1em;
+    color: inherit;
+}
+
+* html button.btn {
+    padding-bottom: 1px;
+}
+
+
+
+/* btn_1
+ * =========
+ */
+
+.btn_1 {
+    background-color: #444;
+}
+
+.btn_1:hover,
+.btn_1:focus {
+    background-color: #000;
+}
+
+.btn_1:active {
+    background-color: #777;
+}
+
+.btn_1 .btn-label {
+    color: #eee;
+    height: 16px;
+    line-height: 16px;
+    padding: 0.5em 1em;
+}
+
+.btn_1:hover .btn-label,
+.btn_1:focus .btn-label {
+    color: #fff;
+}
+
+.btn_1:active .btn-label {
+    color: #ccc;
+}

@@ -18,6 +18,7 @@
 /*
   WIDGETS
 */
+@import url(widgets/button.css);
 @import url(widgets/nav.css);
 @import url(widgets/simplelist.css);
 

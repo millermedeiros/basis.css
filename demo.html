@@ -98,6 +98,7 @@
                 background-color:#fee;
                 border-color:#ecc;
             }
+
         </style>
     </head>
     <body>
@@ -638,6 +639,31 @@
                 <div class="grid fgrid-1">.grid.fgrid-1</div>
                 <div class="grid fgrid-1">.grid.fgrid-1</div>
                 <div class="grid fgrid-1">.grid.fgrid-1</div>
+            </div>
+
+            <hr />
+            <h2 class="h-2">Button (.btn > .btn-label)</h2>
+            <div class="example-note">
+                <p>
+                    The <code>.btn</code> class is used to normalize browser rendering differencies
+                    and should be used as a base class for your buttons. It contains the bare
+                    minimum structural styling to make sure it works the &quot;same way&quot;
+                    when applied to different elements across browsers.
+                    Color and size should be adjusted by adding other classes to the same element.
+                </p>
+            </div>
+
+            <h3 class="h-4">button.btn.btn_1 > span.btn-label</h3>
+            <button class="btn btn_1" type="button">
+                <span class="btn-label">Lorem Ipsum</span>
+            </button>
+            <h3 class="h-4">a.btn.btn_1 > span.btn-label</h3>
+            <a class="btn btn_1" href="#">
+                <span class="btn-label">Lorem Ipsum</span>
+            </a>
+            <h3 class="h-4">div.btn.btn_1 > span.btn-label</h3>
+            <div class="btn btn_1">
+                <span class="btn-label">Lorem Ipsum</span>
             </div>
 
             <hr />

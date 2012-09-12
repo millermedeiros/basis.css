@@ -19,7 +19,16 @@
 .h-5,
 .h-6 {
     font-weight: bold;
-    line-height: 1em;
+    line-height: 1;
+}
+
+.h-1:first-child,
+.h-2:first-child,
+.h-3:first-child,
+.h-4:first-child,
+.h-5:first-child,
+.h-6:first-child {
+    margin-top: 0;
 }
 
 .h-1 {
