@@ -6,9 +6,8 @@ https://github.com/millermedeiros/basis.css/
 
 ## Intro <a href="#intro" name="intro">#</a>
 
-This main goal of this framework goal is to ease/speed up the development
-process helping you to DRY. CSS zen garden is a nice concept but usually not
-practical.
+The main goal of this framework is to ease/speed up the development process
+helping you to DRY. CSS zen garden is a nice concept but usually not practical.
 
 It is heavily inspired by the [OOCSS approach](http://www.slideshare.net/stubbornella/the-cascade-grids-headings-and-selectors-from-an-oocss-perspective-ajax-experience-2009)
 of adding multiple classes to each element even if those classes aren't
