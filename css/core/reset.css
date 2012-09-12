@@ -90,10 +90,11 @@ input::-moz-focus-inner {
     padding:0;
 }
 
-/* removes ipad default styling for text inputs */
+/* removes ipad/iphone default styling for text inputs */
 input[type="text"],
 input[type="password"],
 textarea {
+    padding: 0;
     -webkit-appearance: none;
     -webkit-border-radius: 0;
        -moz-border-radius: 0;
